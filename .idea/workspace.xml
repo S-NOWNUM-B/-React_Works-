@@ -4,14 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b301a7-c102-48bb-8c88-f5437a3d59a2" name="Changes" comment="Исправлены ошибки и иерархия" />
+    <list default="true" id="b3b301a7-c102-48bb-8c88-f5437a3d59a2" name="Changes" comment="Исправление ошибок, переименованы папки">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/public/img/book_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/public/img/book_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/public/img/book_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/public/img/community.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/public/img/hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/public/img/istockphoto-1493082956-1024x1024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/public/logo/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/app.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/components/Footer/Footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/components/Footer/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/components/Header/Header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/components/Header/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/components/ProfileCard/ProfileCard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/components/ProfileCard/ProfileCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CW1/first_work/src/styles/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/public/img/book_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/public/img/book_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/public/img/book_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/public/img/community.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/public/img/hero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/public/img/istockphoto-1493082956-1024x1024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/public/logo/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/app.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/components/Footer/Footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/components/Footer/Footer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/components/Header/Header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/components/Header/Header.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/components/ProfileCard/ProfileCard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/components/ProfileCard/ProfileCard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/home_work/src/styles/global.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/react_practic_work_1/first_work" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -51,6 +93,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,6 +120,10 @@
       <workItem from="1756363551710" duration="3000" />
       <workItem from="1756366212010" duration="170000" />
       <workItem from="1756366420521" duration="1046000" />
+      <workItem from="1756984990456" duration="199000" />
+      <workItem from="1756986862587" duration="47000" />
+      <workItem from="1756989614389" duration="16000" />
+      <workItem from="1756989696433" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="Обновлена структура проекта">
       <option name="closed" value="true" />
