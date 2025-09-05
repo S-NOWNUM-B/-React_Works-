@@ -52,18 +52,33 @@
     margin-bottom: 0.5rem;
 }
 
-.column li a {
-    color: #666;
+.column a {
+    color: #333;
     text-decoration: none;
-    transition: color 0.2s;
 }
 
-.column li a:hover {
-    color: aqua;
+.column a:hover {
+    text-decoration: underline;
+}
+
+.column p {
+    margin: 0.3rem 0;
+}
+
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 .copyright {
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
-    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.navLinks a:hover {
+    color: aqua;
+    text-decoration: none;
 }
