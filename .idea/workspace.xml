@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b301a7-c102-48bb-8c88-f5437a3d59a2" name="Changes" comment="Добавлен README">
+    <list default="true" id="b3b301a7-c102-48bb-8c88-f5437a3d59a2" name="Changes" comment="Обновлено содержимое">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CW1/src/components/Footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/CW1/src/components/Footer/Footer.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,8 @@
       <workItem from="1756989614389" duration="16000" />
       <workItem from="1756989696433" duration="8000" />
       <workItem from="1756989716291" duration="1356000" />
-      <workItem from="1757056905714" duration="296000" />
+      <workItem from="1757056905714" duration="411000" />
+      <workItem from="1757057522192" duration="139000" />
     </task>
     <task id="LOCAL-00001" summary="Обновлена структура проекта">
       <option name="closed" value="true" />
@@ -223,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756990987266</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Обновлено содержимое">
+      <option name="closed" value="true" />
+      <created>1757057298210</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1757057298210</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +245,7 @@
     <MESSAGE value="Исправлены ошибки и иерархия" />
     <MESSAGE value="Добавлена новая папка, изменена иерархия проектов" />
     <MESSAGE value="Добавлен README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен README" />
+    <MESSAGE value="Обновлено содержимое" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновлено содержимое" />
   </component>
 </project>
