@@ -1,0 +1,73 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container-firstname,
+.form-container-lastname {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label-block-firstName,
+.label-block-lastName {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-block-firstName,
+.input-block-lastName {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-block-firstName:focus,
+.input-block-lastName:focus {
+    border-color: #007bff;
+}
+
+.button-block,
+.button-block-lastname {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-block:hover,
+.button-block-lastname:hover {
+    background-color: #0056b3;
+}
+
+.button-block {
+    margin-top: 10px;
+}
+
+.button-block-lastname {
+    margin-top: 20px;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
