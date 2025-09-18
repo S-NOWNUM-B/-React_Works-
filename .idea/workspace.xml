@@ -66,7 +66,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
       </set>
     </attachedChunks>
   </component>
@@ -96,6 +96,7 @@
       <workItem from="1757309814564" duration="151000" />
       <workItem from="1757608463952" duration="104000" />
       <workItem from="1757873483789" duration="626000" />
+      <workItem from="1758208416957" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="Обновлена структура проекта">
       <option name="closed" value="true" />
@@ -265,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757873506377</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Добавлен новый проект">
+      <option name="closed" value="true" />
+      <created>1758208443180</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1758208443180</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
