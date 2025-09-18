@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b301a7-c102-48bb-8c88-f5437a3d59a2" name="Changes" comment="Добавлен новый проект" />
+    <list default="true" id="b3b301a7-c102-48bb-8c88-f5437a3d59a2" name="Changes" comment="Обновлено содержимое">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +99,7 @@
       <workItem from="1757608463952" duration="104000" />
       <workItem from="1757873483789" duration="626000" />
       <workItem from="1758208416957" duration="36000" />
+      <workItem from="1758212068646" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="Обновлена структура проекта">
       <option name="closed" value="true" />
@@ -274,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758208443180</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Обновлено содержимое">
+      <option name="closed" value="true" />
+      <created>1758212081837</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1758212081837</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,9 +299,9 @@
     <MESSAGE value="Исправлены ошибки и иерархия" />
     <MESSAGE value="Добавлена новая папка, изменена иерархия проектов" />
     <MESSAGE value="Добавлен README" />
-    <MESSAGE value="Обновлено содержимое" />
     <MESSAGE value="Добавлены и обновлены файлы" />
     <MESSAGE value="Добавлен новый проект" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен новый проект" />
+    <MESSAGE value="Обновлено содержимое" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновлено содержимое" />
   </component>
 </project>
