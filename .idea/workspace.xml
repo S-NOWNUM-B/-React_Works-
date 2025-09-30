@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3b301a7-c102-48bb-8c88-f5437a3d59a2" name="Changes" comment="Обновлено содержимое" />
+    <list default="true" id="b3b301a7-c102-48bb-8c88-f5437a3d59a2" name="Changes" comment="Добавлен новый проект">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/src/components/TaskInput.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/src/components/TaskItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/src/components/TaskList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/src/styles/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW 4/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3/src/components/Timer/Timer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/HW3/src/components/Timer/Timer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +81,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.162" />
       </set>
     </attachedChunks>
   </component>
@@ -98,6 +113,8 @@
       <workItem from="1757873483789" duration="626000" />
       <workItem from="1758208416957" duration="36000" />
       <workItem from="1758212068646" duration="74000" />
+      <workItem from="1758630827492" duration="426000" />
+      <workItem from="1759240123491" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Обновлена структура проекта">
       <option name="closed" value="true" />
@@ -291,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758212107299</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Добавлен новый проект">
+      <option name="closed" value="true" />
+      <created>1758630878605</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1758630878605</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,8 +331,8 @@
     <MESSAGE value="Добавлена новая папка, изменена иерархия проектов" />
     <MESSAGE value="Добавлен README" />
     <MESSAGE value="Добавлены и обновлены файлы" />
-    <MESSAGE value="Добавлен новый проект" />
     <MESSAGE value="Обновлено содержимое" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновлено содержимое" />
+    <MESSAGE value="Добавлен новый проект" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен новый проект" />
   </component>
 </project>

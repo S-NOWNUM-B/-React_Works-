@@ -91,7 +91,7 @@ function Timer() {
                 fontSize: '48px',
                 fontWeight: 'bold',
                 margin: '20px 0',
-                color: timeLeft <= 10 && timeLeft > 0 ? 'red' : 'black',
+                color: timeLeft <= 10 && timeLeft !== 0 ? 'red' : 'Grey',
             }}>
                 {timeLeft} сек
             </div>
