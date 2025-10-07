@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
+import * as Yup from 'yup';
 
 import '../styles/FormTable.css';
 
@@ -20,55 +21,21 @@ const FormTable = () => {
         country: '',
     };
 
-    const validate = (values) => {
-        const errors = {};
-
-        if (!values.fullName) {
-            errors.fullName = 'Full name is required';
-        }
-
-        if (!values.email) {
-            errors.email = 'Email is required';
-        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-            errors.email = 'Invalid email address';
-        }
-
-        if (!values.password) {
-            errors.password = 'Password is required';
-        } else if (values.password.length < 6) {
-            errors.password = 'Password must be at least 6 characters';
-        }
-
-        if (!values.phone) {
-            errors.phone = 'Phone number is required';
-        }
-
-        if (!values.course) {
-            errors.course = 'Please select a course';
-        }
-
-        if (!values.gender) {
-            errors.gender = 'Please select a gender';
-        }
-
-        if (!values.dateOfBirth) {
-            errors.dateOfBirth = 'Please select a date of birth';
-        }
-
-        if (!values.city) {
-            errors.city = 'Please select a city';
-        }
-
-        if (!values.country) {
-            errors.country = 'Please select a country';
-        }
-
-        if (!values.zipCode || !/^\d+$/.test(values.zipCode)) {
-            errors.zipCode = 'Please enter a valid zip code';
-        }
-
-        return errors;
-    };
+    const validationSchema = Yup.object({
+        fullName: Yup.string().trim().required('Full name is required'),
+        email: Yup.string().trim().email('Invalid email address').required('Email is required'),
+        password: Yup.string().min(6, 'Password must be at least 6 characters').required('Password is required'),
+        phone: Yup.string().trim().matches(/^\+?\d{7,15}$/, 'Enter a valid phone number').required('Phone number is required'),
+        course: Yup.string().required('Please select a course'),
+        dateOfBirth: Yup.date().typeError('Invalid date').max(new Date(), 'Date cannot be in the future').required('Please select date of birth'),
+        gender: Yup.string().required('Please select gender'),
+        education: Yup.string().required('Please select education'),
+        address: Yup.string().trim().nullable().notRequired(),
+        city: Yup.string().trim().required('Please select city'),
+        state: Yup.string().trim().required("Please select state"),
+        zipCode: Yup.string().matches(/^\d+$/, 'Please enter a valid zip code').required('Please enter a valid zip code'),
+        country: Yup.string().required('Please select country'),
+    });
 
     const onSubmit = (values) => {
         alert(JSON.stringify(values, null, 2));
@@ -79,10 +46,10 @@ const FormTable = () => {
             <h1 className="form-title">Форма для работы</h1>
             <Formik
                 initialValues={initialValues}
-                validate={validate}
+                validationSchema={validationSchema}
                 onSubmit={onSubmit}
             >
-                {({ errors, touched }) => (
+                {({ errors, touched, values }) => (
                     <Form className="application-form">
                         <div className="form-group full-width">
                             <Field
@@ -134,19 +101,19 @@ const FormTable = () => {
                         </div>
 
                         <div className="form-group">
-                            <label className="section-label">Выберите курс</label>
+                            <label className="section-label">Which course are you applying for?</label>
                             <div className="radio-group">
                                 <label className="radio-option">
                                     <Field type="radio" name="course" value="Course A" />
-                                    Курс A
+                                    Course A
                                 </label>
                                 <label className="radio-option">
                                     <Field type="radio" name="course" value="Course B" />
-                                    Курс B
+                                    Course B
                                 </label>
                                 <label className="radio-option">
                                     <Field type="radio" name="course" value="Course C" />
-                                    Курс C
+                                    Course C
                                 </label>
                             </div>
                             {errors.course && touched.course && (
@@ -156,12 +123,12 @@ const FormTable = () => {
 
                         <div className="form-row">
                             <div className="form-group half-width">
-                                <label className="section-label">Дата рождения</label>
+                                <label className="section-label">Date of birth</label>
                                 <Field
                                     type="date"
                                     name="dateOfBirth"
                                     className={`form-input ${errors.dateOfBirth && touched.dateOfBirth ? 'error' : ''}`}
-                                    plaxeholder="dd/MM/yyyy"
+                                    placeholder="dd/MM/yyyy"
                                 />
                                 {errors.dateOfBirth && touched.dateOfBirth && (
                                     <div className="error-message">{errors.dateOfBirth}</div>
@@ -185,12 +152,16 @@ const FormTable = () => {
                         </div>
 
                         <div className="form-group full-width">
-                            <label className="section-label">Образование</label>
+                            <label className="section-label">Education</label>
                             <Field as="select" name="education" className="form-select">
-                                <option value="School">Школа</option>
-                                <option value="College">Колледж</option>
-                                <option value="University">Университет</option>
+                                <option value="" disabled>Select education</option>
+                                <option value="School">School</option>
+                                <option value="College">College</option>
+                                <option value="University">University</option>
                             </Field>
+                            {errors.education && touched.education && (
+                                <div className="error-message">{errors.education}</div>
+                            )}
                         </div>
 
                         <div className="form-group full-width">
@@ -239,7 +210,7 @@ const FormTable = () => {
                             </div>
                             <div className="form-group half-width">
                                 <Field as="select" name="country" className={`form-select ${errors.country && touched.country ? 'error' : ''}`}>
-                                    <option value="Country">Country</option>
+                                    <option value="" disabled>Select country</option>
                                     <option value="USA">USA</option>
                                     <option value="Canada">Canada</option>
                                     <option value="UK">UK</option>
