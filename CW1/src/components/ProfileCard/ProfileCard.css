@@ -1,0 +1,24 @@
+.div-wrapper {
+    border: 2px solid aqua;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+
+.div-content {
+    text-align: center;
+    color: #333;
+}
+
+.div-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.div-content p {
+    font-size: 16px;
+    color: #333;
+}
