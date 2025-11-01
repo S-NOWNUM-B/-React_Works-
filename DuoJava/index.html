@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путь изучения Java - Освойте программирование на Java</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+  --color-success-rgb: 33, 128, 141;
+  --color-error-rgb: 192, 21, 47;
+  --color-warning-rgb: 168, 75, 47;
+  --color-info-rgb: 98, 108, 113;
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    --color-success-rgb: var(--color-teal-300-rgb);
+    --color-error-rgb: var(--color-red-400-rgb);
+    --color-warning-rgb: var(--color-orange-400-rgb);
+    --color-info-rgb: var(--color-gray-300-rgb);
+  }
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: var(--line-height-normal);
+  font-size: var(--font-size-base);
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: var(--space-24);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.profile-section {
+  margin-bottom: var(--space-24);
+  padding-bottom: var(--space-24);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-btn-primary-text);
+  margin-bottom: var(--space-12);
+}
+
+.user-name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+}
+
+.user-level {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-12);
+}
+
+.xp-progress {
+  margin-top: var(--space-12);
+}
+
+.xp-bar-container {
+  background: var(--color-secondary);
+  border-radius: var(--radius-full);
+  height: 8px;
+  overflow: hidden;
+  margin-top: var(--space-6);
+}
+
+.xp-bar {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-hover));
+  height: 100%;
+  transition: width 0.5s var(--ease-standard);
+}
+
+.xp-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-top: var(--space-4);
+}
+
+.stats-section {
+  margin-bottom: var(--space-24);
+}
+
+.stats-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-16);
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-8) 0;
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.stat-label {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.stat-value {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+}
+
+.achievements-section {
+  margin-top: var(--space-24);
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.achievement-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  transition: transform 0.2s var(--ease-standard);
+  position: relative;
+}
+
+.achievement-badge.unlocked {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  box-shadow: var(--shadow-md);
+}
+
+.achievement-badge.locked {
+  background: var(--color-secondary);
+  opacity: 0.5;
+}
+
+.achievement-badge:hover {
+  transform: scale(1.1);
+}
+
+.main-content {
+  flex: 1;
+  padding: var(--space-32);
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: var(--space-32);
+}
+
+.header h1 {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-8);
+}
+
+.header p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+}
+
+.units-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.unit {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  border: 1px solid var(--color-card-border);
+}
+
+.unit-header {
+  margin-bottom: var(--space-20);
+}
+
+.unit-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-6);
+}
+
+.unit-description {
+  color: var(--color-text-secondary);
+}
+
+.lessons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-16);
+}
+
+.lesson-card {
+  background: var(--color-background);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  cursor: pointer;
+  transition: all 0.2s var(--ease-standard);
+  position: relative;
+}
+
+.lesson-card:not(.locked):hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
+}
+
+.lesson-card.completed {
+  border-color: var(--color-success);
+  background: rgba(var(--color-success-rgb), 0.05);
+}
+
+.lesson-card.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.lesson-number {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.lesson-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-8);
+}
+
+.lesson-status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.status-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-20);
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+  padding: var(--space-24);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: var(--font-size-2xl);
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-base);
+  transition: all 0.2s var(--ease-standard);
+}
+
+.close-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.modal-body {
+  padding: var(--space-24);
+}
+
+.question-container {
+  margin-bottom: var(--space-24);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-16);
+}
+
+.question-number {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.question-text {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-20);
+  line-height: 1.6;
+}
+
+.question-code {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  margin: var(--space-16) 0;
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.option-btn {
+  background: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-standard);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-teal-500-rgb), 0.05);
+}
+
+.option-btn.correct {
+  border-color: var(--color-success);
+  background: rgba(var(--color-success-rgb), 0.1);
+  animation: correctGlow 0.5s ease-out;
+}
+
+.option-btn.incorrect {
+  border-color: var(--color-error);
+  background: rgba(var(--color-error-rgb), 0.1);
+  animation: shake 0.5s ease-out;
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+}
+
+.answer-input {
+  width: 100%;
+  padding: var(--space-12);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-mono);
+  background: var(--color-background);
+  color: var(--color-text);
+  transition: border-color 0.2s var(--ease-standard);
+}
+
+.answer-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.answer-input.correct {
+  border-color: var(--color-success);
+  background: rgba(var(--color-success-rgb), 0.05);
+}
+
+.answer-input.incorrect {
+  border-color: var(--color-error);
+  background: rgba(var(--color-error-rgb), 0.05);
+}
+
+.feedback {
+  margin-top: var(--space-16);
+  padding: var(--space-12);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-sm);
+  display: none;
+}
+
+.feedback.show {
+  display: block;
+}
+
+.feedback.correct {
+  background: rgba(var(--color-success-rgb), 0.1);
+  border: 1px solid var(--color-success);
+  color: var(--color-success);
+}
+
+.feedback.incorrect {
+  background: rgba(var(--color-error-rgb), 0.1);
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+}
+
+.hint-section {
+  margin-top: var(--space-12);
+  display: none;
+}
+
+.hint-section.show {
+  display: block;
+}
+
+.hint-btn {
+  background: var(--color-secondary);
+  border: none;
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  transition: background 0.2s var(--ease-standard);
+}
+
+.hint-btn:hover {
+  background: var(--color-secondary-hover);
+}
+
+.hint-content {
+  margin-top: var(--space-12);
+  padding: var(--space-12);
+  background: var(--color-bg-2);
+  border-left: 3px solid var(--color-warning);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-sm);
+  display: none;
+}
+
+.hint-content.show {
+  display: block;
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--space-12);
+  margin-top: var(--space-24);
+}
+
+.btn {
+  padding: var(--space-12) var(--space-24);
+  border-radius: var(--radius-base);
+  border: none;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all 0.2s var(--ease-standard);
+  font-family: var(--font-family-base);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn-secondary:hover {
+  background: var(--color-secondary-hover);
+}
+
+.results-container {
+  text-align: center;
+  padding: var(--space-32) var(--space-24);
+}
+
+.results-score {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-16);
+}
+
+.results-message {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-12);
+}
+
+.results-xp {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-24);
+}
+
+.results-actions {
+  display: flex;
+  gap: var(--space-12);
+  justify-content: center;
+}
+
+.achievement-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-32);
+  box-shadow: var(--shadow-lg);
+  z-index: 2000;
+  text-align: center;
+  max-width: 400px;
+  border: 2px solid var(--color-primary);
+  transition: transform 0.3s var(--ease-standard);
+}
+
+.achievement-popup.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.achievement-icon {
+  font-size: 64px;
+  margin-bottom: var(--space-16);
+  animation: bounce 0.6s ease-out;
+}
+
+.achievement-popup h3 {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-8);
+}
+
+.achievement-popup p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-20);
+}
+
+.level-up-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  color: var(--color-btn-primary-text);
+  border-radius: var(--radius-lg);
+  padding: var(--space-32);
+  box-shadow: var(--shadow-lg);
+  z-index: 2000;
+  text-align: center;
+  max-width: 400px;
+  transition: transform 0.3s var(--ease-standard);
+}
+
+.level-up-popup.show {
+  transform: translate(-50%, -50%) scale(1);
+  animation: levelUpPulse 0.6s ease-out;
+}
+
+.level-up-popup h2 {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--space-16);
+}
+
+@keyframes correctGlow {
+  0% { box-shadow: 0 0 0 0 rgba(var(--color-success-rgb), 0.7); }
+  100% { box-shadow: 0 0 0 10px rgba(var(--color-success-rgb), 0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes levelUpPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.05); }
+}
+
+.tooltip {
+  position: absolute;
+  background: var(--color-charcoal-700);
+  color: var(--color-white);
+  padding: var(--space-6) var(--space-10);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-xs);
+  white-space: nowrap;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s var(--ease-standard);
+}
+
+.achievement-badge:hover .tooltip {
+  opacity: 1;
+}
+
+.streak-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-12);
+}
+
+.streak-day {
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+  background: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xs);
+}
+
+.streak-day.active {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.streak-day.today {
+  border: 2px solid var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .main-content {
+    padding: var(--space-16);
+  }
+  
+  .lessons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-12);">
+                    <div class="avatar" id="avatar">JL</div>
+                    <button onclick="toggleLanguage()" class="btn-secondary" style="padding: var(--space-8) var(--space-12); border-radius: var(--radius-base); border: 1px solid var(--color-border); background: var(--color-secondary); cursor: pointer; font-size: var(--font-size-sm); font-weight: var(--font-weight-medium);" title="Switch Language">
+                        <i class="fas fa-language"></i> <span id="langToggle">EN</span>
+                    </button>
+                </div>
+                <div class="user-name" id="userName">Изучающий Java</div>
+                <div class="user-level" id="userLevel">Уровень 1</div>
+                <div class="xp-progress">
+                    <div class="xp-bar-container">
+                        <div class="xp-bar" id="xpBar" style="width: 0%"></div>
+                    </div>
+                    <div class="xp-text" id="xpText">0 / 100 XP</div>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h3 class="stats-title" id="statsTitle">Статистика</h3>
+                <div class="stat-item">
+                    <span class="stat-label" id="labelTotalXP">Всего XP</span>
+                    <span class="stat-value" id="totalXP">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label" id="labelLessonsCompleted">Уроков пройдено</span>
+                    <span class="stat-value" id="lessonsCompleted">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label" id="labelAccuracy">Точность</span>
+                    <span class="stat-value" id="accuracy">0%</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label" id="labelQuestionsAnswered">Вопросов отвечено</span>
+                    <span class="stat-value" id="questionsAnswered">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label" id="labelCurrentStreak">Текущая серия</span>
+                    <span class="stat-value" id="currentStreak">0 дней</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label" id="labelFavoriteTopic">Любимая тема</span>
+                    <span class="stat-value" id="favoriteTopic">-</span>
+                </div>
+            </div>
+
+            <div class="achievements-section">
+                <h3 class="stats-title" id="achievementsTitle">Достижения</h3>
+                <div class="achievement-grid" id="achievementGrid"></div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <h1 id="mainTitle">Путь изучения Java</h1>
+                <p id="mainSubtitle">Освойте программирование на Java от основ до продвинутых концепций ООП</p>
+            </header>
+
+            <div class="units-container" id="unitsContainer"></div>
+        </main>
+    </div>
+
+    <div class="modal" id="lessonModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="achievement-popup" id="achievementPopup">
+        <div class="achievement-icon" id="achievementPopupIcon"></div>
+        <h3 id="achievementPopupTitle"></h3>
+        <p id="achievementPopupDesc"></p>
+        <button class="btn btn-primary" onclick="closeAchievementPopup()">Круто!</button>
+    </div>
+
+    <div class="level-up-popup" id="levelUpPopup">
+        <h2><i class="fas fa-trophy"></i> <span id="levelUpTitle">Повышение уровня!</span></h2>
+        <p style="font-size: var(--font-size-2xl); margin: var(--space-16) 0;"><span id="levelUpText">Теперь вы</span> <span id="newLevel"></span></p>
+        <button class="btn btn-secondary" onclick="closeLevelUpPopup()" id="btnLevelUpClose">Продолжить</button>
+    </div>
+
+    <script>
+        // Language state
+        let currentLang = 'ru';
+
+        // Detect browser language
+        function detectLanguage() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            const langCode = browserLang.toLowerCase().split('-')[0];
+            return ['ru', 'kk', 'by', 'uk'].includes(langCode) ? 'ru' : 'en';
+        }
+
+        currentLang = detectLanguage();
+
+        // Application State
+        const state = {
+            currentXP: 0,
+            level: 1,
+            completedLessons: new Set(),
+            achievements: new Set(),
+            totalQuestionsAnswered: 0,
+            correctAnswers: 0,
+            currentStreak: 0,
+            lastCompletedDate: null,
+            streakDates: [],
+            lessonScores: {},
+            unitProgress: {}
+        };
+
+        // Translations
+        const translations = {
+            ru: {
+                // UI Elements
+                langToggle: 'EN',
+                userName: 'Изучающий Java',
+                level: 'Уровень',
+                statsTitle: 'Статистика',
+                totalXP: 'Всего XP',
+                lessonsCompleted: 'Уроков пройдено',
+                accuracy: 'Точность',
+                questionsAnswered: 'Вопросов отвечено',
+                currentStreak: 'Текущая серия',
+                favoriteTopic: 'Любимая тема',
+                days: 'дней',
+                achievementsTitle: 'Достижения',
+                mainTitle: 'Путь изучения Java',
+                mainSubtitle: 'Освойте программирование на Java от основ до продвинутых концепций ООП',
+                progress: 'Прогресс',
+                lessons: 'уроков',
+                lesson: 'Урок',
+                completed: 'Пройден',
+                locked: 'Заблокирован',
+                question: 'Вопрос',
+                of: 'из',
+                showHint: 'Показать подсказку',
+                exit: 'Выход',
+                continue: 'Продолжить',
+                submit: 'Проверить',
+                correct: 'Правильно! Отлично!',
+                incorrect: 'Неправильно.',
+                correctAnswer: 'Правильный ответ:',
+                enterAnswer: 'Введите ваш ответ здесь...',
+                perfect: 'Идеально!',
+                greatJob: 'Отличная работа!',
+                keepPracticing: 'Продолжайте практиковаться!',
+                xpEarned: 'XP заработано',
+                time: 'Время',
+                correctAnswers: 'Правильно',
+                retryLesson: 'Повторить урок',
+                levelUp: 'Повышение уровня!',
+                nowYouAre: 'Теперь вы',
+                awesome: 'Круто!',
+                // Units
+                units: [
+                    { title: 'Основы Java', desc: 'Освойте основы программирования на Java' },
+                    { title: 'Переменные и типы данных', desc: 'Работа с данными в Java' },
+                    { title: 'Операторы и управление потоком', desc: 'Условия и циклы' },
+                    { title: 'Методы и функции', desc: 'Создание повторно используемого кода' },
+                    { title: 'ООП - Введение', desc: 'Введение в объектно-ориентированное программирование' },
+                    { title: 'ООП - Инкапсуляция', desc: 'Освойте принципы инкапсуляции' },
+                    { title: 'ООП - Наследование', desc: 'Изучите наследование и переиспользование кода' },
+                    { title: 'ООП - Полиморфизм', desc: 'Понимание полиморфизма в Java' },
+                    { title: 'ООП - Абстракция', desc: 'Освойте концепции абстракции' },
+                    { title: 'ООП - Вложенные классы', desc: 'Работа с вложенными классами' },
+                    { title: 'ООП - Enum и Generics', desc: 'Изучите продвинутые возможности Java' },
+                    { title: 'Финальный проект', desc: 'Применение всех изученных концепций' }
+                ],
+                // Lessons
+                lessonTitles: [
+                    'Введение в Java', 'Переменные и типы данных', 'Операторы', 'Строки',
+                    'Ввод данных', 'Математические операции', 'Булевы значения', 'Приведение типов',
+                    'Условные операторы If-Else', 'Оператор Switch', 'Цикл While', 'Цикл For',
+                    'Массивы', 'Многомерные массивы', 'Методы', 'Параметры методов', 'Перегрузка методов',
+                    'Область видимости', 'Рекурсия', 'Что такое ООП?', 'Классы и объекты', 'Атрибуты класса', 'Методы класса',
+                    'Конструкторы', 'Модификаторы', 'Введение в инкапсуляцию', 'Геттеры и сеттеры', 'Приватные поля',
+                    'Скрытие данных', 'Пакеты', 'Введение в наследование', 'Подклассы и суперклассы', 'Ключевое слово super', 'Переопределение методов',
+                    'Ключевое слово Final', 'Введение в полиморфизм', 'Полиморфизм времени выполнения', 'Полиморфизм времени компиляции', 'Оператор Instanceof',
+                    'Введение в абстракцию', 'Абстрактные классы', 'Абстрактные методы', 'Интерфейсы', 'Множественные интерфейсы', 'Внутренние классы',
+                    'Статические вложенные классы', 'Анонимные классы', 'Перечисления', 'Продвинутый ввод данных', 'Дата и время',
+                    'ArrayList', 'LinkedList', 'HashMap', 'HashSet', 'Iterator', 'Классы-обертки',
+                    'Исключения', 'Try-Catch', 'Регулярные выражения', 'Потоки', 'Лямбда-выражения'
+                ],
+                // Achievements
+                achievements: [
+                    { name: 'Первые шаги', desc: 'Завершите первый урок' },
+                    { name: 'В огне', desc: 'Завершите 5 уроков' },
+                    { name: 'Восходящая звезда', desc: 'Завершите 10 уроков' },
+                    { name: 'Алмазный ученик', desc: 'Завершите 20 уроков' },
+                    { name: 'Рыцарь Java', desc: 'Завершите 30 уроков' },
+                    { name: 'Мастер-студент', desc: 'Завершите 40 уроков' },
+                    { name: 'Эксперт разработчик', desc: 'Завершите 50 уроков' },
+                    { name: 'Клуб сотни', desc: 'Заработайте 100 XP' },
+                    { name: 'Охотник за XP', desc: 'Заработайте 250 XP' },
+                    { name: 'Полтысячи', desc: 'Заработайте 500 XP' },
+                    { name: 'Тысячник', desc: 'Заработайте 1000 XP' },
+                    { name: 'К небесам', desc: 'Заработайте 1500 XP' },
+                    { name: 'Легенда XP', desc: 'Заработайте 2000 XP' },
+                    { name: 'Перфекционист', desc: 'Получите 100% в уроке' },
+                    { name: 'Серия из 3 дней', desc: 'Учитесь 3 дня подряд' },
+                    { name: 'Недельный воин', desc: 'Учитесь 7 дней подряд' },
+                    { name: 'Двухнедельный гром', desc: 'Учитесь 14 дней подряд' },
+                    { name: 'Месячный мастер', desc: 'Учитесь 30 дней подряд' },
+                    { name: 'Демон скорости', desc: 'Завершите урок менее чем за 2 минуты' }
+                ]
+            },
+            en: {
+                // UI Elements
+                langToggle: 'RU',
+                userName: 'Java Learner',
+                level: 'Level',
+                statsTitle: 'Statistics',
+                totalXP: 'Total XP',
+                lessonsCompleted: 'Lessons Completed',
+                accuracy: 'Accuracy',
+                questionsAnswered: 'Questions Answered',
+                currentStreak: 'Current Streak',
+                favoriteTopic: 'Favorite Topic',
+                days: 'days',
+                achievementsTitle: 'Achievements',
+                mainTitle: 'Java Learning Path',
+                mainSubtitle: 'Master Java programming from basics to advanced OOP concepts',
+                progress: 'Progress',
+                lessons: 'lessons',
+                lesson: 'Lesson',
+                completed: 'Completed',
+                locked: 'Locked',
+                question: 'Question',
+                of: 'of',
+                showHint: 'Show Hint',
+                exit: 'Exit',
+                continue: 'Continue',
+                submit: 'Check',
+                correct: 'Correct! Excellent!',
+                incorrect: 'Incorrect.',
+                correctAnswer: 'Correct answer:',
+                enterAnswer: 'Enter your answer here...',
+                perfect: 'Perfect!',
+                greatJob: 'Great job!',
+                keepPracticing: 'Keep practicing!',
+                xpEarned: 'XP earned',
+                time: 'Time',
+                correctAnswers: 'Correct',
+                retryLesson: 'Retry Lesson',
+                levelUp: 'Level Up!',
+                nowYouAre: 'You are now',
+                awesome: 'Awesome!',
+                // Units
+                units: [
+                    { title: 'Java Basics', desc: 'Master the fundamentals of Java programming' },
+                    { title: 'Variables and Data Types', desc: 'Working with data in Java' },
+                    { title: 'Operators and Control Flow', desc: 'Conditions and loops' },
+                    { title: 'Methods and Functions', desc: 'Creating reusable code' },
+                    { title: 'OOP - Introduction', desc: 'Introduction to Object-Oriented Programming' },
+                    { title: 'OOP - Encapsulation', desc: 'Master encapsulation principles' },
+                    { title: 'OOP - Inheritance', desc: 'Learn inheritance and code reuse' },
+                    { title: 'OOP - Polymorphism', desc: 'Understanding polymorphism in Java' },
+                    { title: 'OOP - Abstraction', desc: 'Master abstraction concepts' },
+                    { title: 'OOP - Nested Classes', desc: 'Working with nested classes' },
+                    { title: 'OOP - Enum and Generics', desc: 'Learn advanced Java features' },
+                    { title: 'Final Project', desc: 'Apply all learned concepts' }
+                ],
+                // Lessons
+                lessonTitles: [
+                    'Introduction to Java', 'Variables and Data Types', 'Operators', 'Strings',
+                    'Data Input', 'Math Operations', 'Boolean Values', 'Type Casting',
+                    'If-Else Statements', 'Switch Statement', 'While Loop', 'For Loop',
+                    'Arrays', 'Multidimensional Arrays', 'Methods', 'Method Parameters', 'Method Overloading',
+                    'Scope', 'Recursion', 'What is OOP?', 'Classes and Objects', 'Class Attributes', 'Class Methods',
+                    'Constructors', 'Modifiers', 'Introduction to Encapsulation', 'Getters and Setters', 'Private Fields',
+                    'Data Hiding', 'Packages', 'Introduction to Inheritance', 'Subclasses and Superclasses', 'The super Keyword', 'Method Overriding',
+                    'The Final Keyword', 'Introduction to Polymorphism', 'Runtime Polymorphism', 'Compile-time Polymorphism', 'Instanceof Operator',
+                    'Introduction to Abstraction', 'Abstract Classes', 'Abstract Methods', 'Interfaces', 'Multiple Interfaces', 'Inner Classes',
+                    'Static Nested Classes', 'Anonymous Classes', 'Enumerations', 'Advanced Input', 'Date and Time',
+                    'ArrayList', 'LinkedList', 'HashMap', 'HashSet', 'Iterator', 'Wrapper Classes',
+                    'Exceptions', 'Try-Catch', 'Regular Expressions', 'Threads', 'Lambda Expressions'
+                ],
+                // Achievements
+                achievements: [
+                    { name: 'First Steps', desc: 'Complete first lesson' },
+                    { name: 'On Fire', desc: 'Complete 5 lessons' },
+                    { name: 'Rising Star', desc: 'Complete 10 lessons' },
+                    { name: 'Diamond Student', desc: 'Complete 20 lessons' },
+                    { name: 'Java Knight', desc: 'Complete 30 lessons' },
+                    { name: 'Master Student', desc: 'Complete 40 lessons' },
+                    { name: 'Expert Developer', desc: 'Complete 50 lessons' },
+                    { name: 'Century Club', desc: 'Earn 100 XP' },
+                    { name: 'XP Hunter', desc: 'Earn 250 XP' },
+                    { name: 'Half Thousand', desc: 'Earn 500 XP' },
+                    { name: 'Thousandaire', desc: 'Earn 1000 XP' },
+                    { name: 'Sky High', desc: 'Earn 1500 XP' },
+                    { name: 'XP Legend', desc: 'Earn 2000 XP' },
+                    { name: 'Perfectionist', desc: 'Get 100% in a lesson' },
+                    { name: '3-Day Streak', desc: 'Study for 3 days in a row' },
+                    { name: 'Weekly Warrior', desc: 'Study for 7 days in a row' },
+                    { name: 'Two-Week Thunder', desc: 'Study for 14 days in a row' },
+                    { name: 'Monthly Master', desc: 'Study for 30 days in a row' },
+                    { name: 'Speed Demon', desc: 'Complete a lesson in under 2 minutes' }
+                ]
+            }
+        };
+
+        // Translation helper
+        function t(key) {
+            return translations[currentLang][key] || key;
+        }
+
+        // Toggle language
+        function toggleLanguage() {
+            currentLang = currentLang === 'ru' ? 'en' : 'ru';
+            setLanguage(currentLang);
+        }
+
+        // Set language and update UI
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.getElementById('langToggle').textContent = t('langToggle');
+            document.getElementById('userName').textContent = t('userName');
+            document.getElementById('statsTitle').textContent = t('statsTitle');
+            document.getElementById('labelTotalXP').textContent = t('totalXP');
+            document.getElementById('labelLessonsCompleted').textContent = t('lessonsCompleted');
+            document.getElementById('labelAccuracy').textContent = t('accuracy');
+            document.getElementById('labelQuestionsAnswered').textContent = t('questionsAnswered');
+            document.getElementById('labelCurrentStreak').textContent = t('currentStreak');
+            document.getElementById('labelFavoriteTopic').textContent = t('favoriteTopic');
+            document.getElementById('achievementsTitle').textContent = t('achievementsTitle');
+            document.getElementById('mainTitle').textContent = t('mainTitle');
+            document.getElementById('mainSubtitle').textContent = t('mainSubtitle');
+            
+            // Update level display
+            document.getElementById('userLevel').textContent = `${t('level')} ${state.level}`;
+            
+            // Update streak display
+            document.getElementById('currentStreak').textContent = `${state.currentStreak} ${t('days')}`;
+            
+            // Re-render units and achievements
+            renderUnits();
+            renderAchievements();
+            
+            // If in lesson, update question display
+            if (currentLesson) {
+                showQuestion();
+            }
+        }
+
+        // Lessons Data with bilingual support
+        const units = [
+            {
+                id: 1,
+                color: "--color-bg-1",
+                lessons: [
+                    { id: 1, xp: 50 },
+                    { id: 2, xp: 50 },
+                    { id: 3, xp: 50 },
+                    { id: 4, xp: 50 }
+                ]
+            },
+            {
+                id: 2,
+                color: "--color-bg-2",
+                lessons: [
+                    { id: 5, xp: 50 },
+                    { id: 6, xp: 50 },
+                    { id: 7, xp: 50 },
+                    { id: 8, xp: 50 }
+                ]
+            },
+            {
+                id: 3,
+                color: "--color-bg-3",
+                lessons: [
+                    { id: 9, xp: 50 },
+                    { id: 10, xp: 50 },
+                    { id: 11, xp: 50 },
+                    { id: 12, xp: 50 }
+                ]
+            },
+            {
+                id: 4,
+                color: "--color-bg-4",
+                lessons: [
+                    { id: 13, xp: 60 },
+                    { id: 14, xp: 60 },
+                    { id: 15, xp: 60 },
+                    { id: 16, xp: 60 },
+                    { id: 17, xp: 60 }
+                ]
+            },
+            {
+                id: 5,
+                color: "--color-bg-5",
+                lessons: [
+                    { id: 18, xp: 60 },
+                    { id: 19, xp: 60 },
+                    { id: 20, xp: 70 },
+                    { id: 21, xp: 70 },
+                    { id: 22, xp: 70 },
+                    { id: 23, xp: 70 }
+                ]
+            },
+            {
+                id: 6,
+                color: "--color-bg-6",
+                lessons: [
+                    { id: 24, xp: 70 },
+                    { id: 25, xp: 70 },
+                    { id: 26, xp: 80 },
+                    { id: 27, xp: 80 },
+                    { id: 28, xp: 80 }
+                ]
+            },
+            {
+                id: 7,
+                color: "--color-bg-7",
+                lessons: [
+                    { id: 29, xp: 80 },
+                    { id: 30, xp: 80 },
+                    { id: 31, xp: 90 },
+                    { id: 32, xp: 90 },
+                    { id: 33, xp: 90 },
+                    { id: 34, xp: 90 }
+                ]
+            },
+            {
+                id: 8,
+                color: "--color-bg-8",
+                lessons: [
+                    { id: 35, xp: 90 },
+                    { id: 36, xp: 100 },
+                    { id: 37, xp: 100 },
+                    { id: 38, xp: 100 },
+                    { id: 39, xp: 100 }
+                ]
+            },
+            {
+                id: 9,
+                color: "--color-bg-1",
+                lessons: [
+                    { id: 40, xp: 110 },
+                    { id: 41, xp: 110 },
+                    { id: 42, xp: 110 },
+                    { id: 43, xp: 110 },
+                    { id: 44, xp: 110 },
+                    { id: 45, xp: 120 }
+                ]
+            },
+            {
+                id: 10,
+                color: "--color-bg-2",
+                lessons: [
+                    { id: 46, xp: 120 },
+                    { id: 47, xp: 120 },
+                    { id: 48, xp: 120 },
+                    { id: 49, xp: 120 },
+                    { id: 50, xp: 120 }
+                ]
+            },
+            {
+                id: 11,
+                color: "--color-bg-3",
+                lessons: [
+                    { id: 51, xp: 120 },
+                    { id: 52, xp: 120 },
+                    { id: 53, xp: 120 },
+                    { id: 54, xp: 120 },
+                    { id: 55, xp: 120 },
+                    { id: 56, xp: 120 }
+                ]
+            },
+            {
+                id: 12,
+                color: "--color-bg-4",
+                lessons: [
+                    { id: 57, xp: 120 },
+                    { id: 58, xp: 120 },
+                    { id: 59, xp: 120 },
+                    { id: 60, xp: 120 },
+                    { id: 61, xp: 120 }
+                ]
+            }
+        ];
+
+        // Questions Database (Bilingual)
+        const questionsDB = {
+            1: [
+                { 
+                    q: { ru: "Что означает JVM?", en: "What does JVM stand for?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "Java Virtual Machine (виртуальная машина Java)", en: "Java Virtual Machine" },
+                        { ru: "Java Visual Manager", en: "Java Visual Manager" },
+                        { ru: "Java Variable Method", en: "Java Variable Method" },
+                        { ru: "Java Version Manager", en: "Java Version Manager" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Подумайте, что запускает программы Java", en: "Think about what runs Java programs" } 
+                },
+                { 
+                    q: { ru: "Какая компания изначально разработала Java?", en: "Which company originally developed Java?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "Sun Microsystems", en: "Sun Microsystems" },
+                        { ru: "Microsoft", en: "Microsoft" },
+                        { ru: "Apple", en: "Apple" },
+                        { ru: "Google", en: "Google" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Java сейчас принадлежит Oracle, но изначально была создана другой компанией", en: "Java is now owned by Oracle, but it was originally created by another company" } 
+                },
+                { 
+                    q: { ru: "Какое расширение имеют файлы исходного кода Java?", en: "What is the file extension for Java source files?" }, 
+                    type: "text", 
+                    correct: { ru: ".java", en: ".java" }, 
+                    hint: { ru: "Такое же, как название языка", en: "It's the same as the language name" } 
+                },
+                { 
+                    q: { ru: "Напишите команду для вывода 'Hello World' в Java:", en: "Write the basic structure to print 'Hello World' in Java:" }, 
+                    type: "text", 
+                    correct: { ru: "System.out.println", en: "System.out.println" }, 
+                    hint: { ru: "Используйте System.out.println()", en: "Use System.out.println()" } 
+                },
+                { 
+                    q: { ru: "Java - это платформонезависимый язык?", en: "Is Java a platform-independent language?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "Да", en: "Yes" },
+                        { ru: "Нет", en: "No" },
+                        { ru: "Только на Windows", en: "Only on Windows" },
+                        { ru: "Только на Linux", en: "Only on Linux" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Напиши однажды, запусти где угодно", en: "Write Once, Run Anywhere" } 
+                },
+                { 
+                    q: { ru: "Что такое байт-код в Java?", en: "What is bytecode in Java?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "Промежуточный код, выполняемый JVM", en: "Intermediate code executed by JVM" },
+                        { ru: "Машинный код", en: "Machine code" },
+                        { ru: "Исходный код", en: "Source code" },
+                        { ru: "Скомпилированный файл", en: "Compiled executable" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Это код, который выполняет JVM", en: "It's the code that JVM executes" } 
+                }
+            ],
+            2: [
+                { 
+                    q: { ru: "Какое ключевое слово используется для объявления неизменяемой переменной?", en: "Which keyword is used to declare a variable that cannot be changed?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "final", en: "final" },
+                        { ru: "const", en: "const" },
+                        { ru: "static", en: "static" },
+                        { ru: "immutable", en: "immutable" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Делает переменную константой", en: "It makes the variable constant" } 
+                },
+                { 
+                    q: { ru: "Каково значение по умолчанию для переменной int?", en: "What is the default value of an int variable?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "0", en: "0" },
+                        { ru: "null", en: "null" },
+                        { ru: "undefined", en: "undefined" },
+                        { ru: "1", en: "1" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Числовые примитивы по умолчанию равны нулю", en: "Numeric primitives default to zero" } 
+                },
+                { 
+                    q: { ru: "Напишите код для объявления целочисленной переменной 'age' со значением 25:", en: "Write the code to declare an integer variable named 'age' with value 25:" }, 
+                    type: "text", 
+                    correct: { ru: "int age = 25", en: "int age = 25" }, 
+                    hint: { ru: "тип имя = значение;", en: "type name = value;" } 
+                },
+                { 
+                    q: { ru: "Какой тип данных используется для хранения одного символа?", en: "Which data type is used to store a single character?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "char", en: "char" },
+                        { ru: "string", en: "string" },
+                        { ru: "character", en: "character" },
+                        { ru: "text", en: "text" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Сокращение от 'character'", en: "Short for 'character'" } 
+                },
+                { 
+                    q: { ru: "Каков размер double в Java?", en: "What is the size of a double in Java?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "64 бита", en: "64 bits" },
+                        { ru: "32 бита", en: "32 bits" },
+                        { ru: "16 бит", en: "16 bits" },
+                        { ru: "128 бит", en: "128 bits" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Вдвое больше float", en: "Double the size of float" } 
+                },
+                { 
+                    q: { ru: "Можно ли изменить значение final переменной?", en: "Can you change the value of a final variable?" }, 
+                    type: "multiple", 
+                    options: [
+                        { ru: "Нет", en: "No" },
+                        { ru: "Да", en: "Yes" },
+                        { ru: "Только один раз", en: "Only once" },
+                        { ru: "Только в конструкторе", en: "Only in constructors" }
+                    ], 
+                    correct: 0, 
+                    hint: { ru: "Final означает константа", en: "Final means constant" } 
+                }
+            ],
+            3: [
+                { q: "Which operator is used for addition in Java?", type: "multiple", options: ["+", "add", "plus", "sum"], correct: 0, hint: "Same as mathematics" },
+                { q: "What does the ++ operator do?", type: "multiple", options: ["Increments by 1", "Adds 2", "Doubles the value", "Decrements by 1"], correct: 0, hint: "It's the increment operator" },
+                { q: "Write code to increment variable x by 1 using the increment operator:", type: "text", correct: "x++", hint: "Use the ++ operator" },
+                { q: "What is the result of 10 % 3?", type: "multiple", options: ["1", "3", "0", "10"], correct: 0, hint: "% is the modulus operator (remainder)" },
+                { q: "Which operator is used for logical AND?", type: "multiple", options: ["&&", "&", "AND", "and"], correct: 0, hint: "Two ampersands" },
+                { q: "What does the == operator check?", type: "multiple", options: ["Equality", "Assignment", "Comparison", "Identity"], correct: 0, hint: "Double equals checks if values are equal" },
+                { q: "Write the operator to check if a is greater than b:", type: "text", correct: ">", hint: "Use the greater than symbol" }
+            ],
+            4: [
+                { q: "Which method returns the length of a string?", type: "multiple", options: ["length()", "size()", "getLength()", "count()"], correct: 0, hint: "Similar to array.length but with parentheses" },
+                { q: "How do you concatenate two strings s1 and s2?", type: "multiple", options: ["s1 + s2", "s1.concat(s2)", "Both above", "s1 & s2"], correct: 2, hint: "You can use + or concat()" },
+                { q: "Write code to convert a string 'text' to uppercase:", type: "text", correct: "text.toUpperCase()", hint: "Use the toUpperCase() method" },
+                { q: "What does the indexOf() method return if the character is not found?", type: "multiple", options: ["-1", "0", "null", "false"], correct: 0, hint: "A negative index" },
+                { q: "Which method compares two strings for equality?", type: "multiple", options: ["equals()", "==", "compare()", "isEqual()"], correct: 0, hint: "Use equals() for strings, not ==" },
+                { q: "How do you get a character at index 3 in string s?", type: "text", correct: "s.charAt(3)", hint: "Use charAt() method" }
+            ],
+            5: [
+                { q: "Which class is used to get user input from console?", type: "multiple", options: ["Scanner", "Input", "Reader", "Console"], correct: 0, hint: "It scans the input" },
+                { q: "What method reads a line of text from Scanner?", type: "multiple", options: ["nextLine()", "readLine()", "getLine()", "scanLine()"], correct: 0, hint: "Next line of input" },
+                { q: "Write code to create a Scanner object named 'input' for System.in:", type: "text", correct: "Scanner input = new Scanner(System.in)", hint: "new Scanner(System.in)" },
+                { q: "Which method reads an integer from Scanner?", type: "multiple", options: ["nextInt()", "readInt()", "getInt()", "scanInt()"], correct: 0, hint: "Next integer" },
+                { q: "Do you need to import Scanner class?", type: "multiple", options: ["Yes", "No", "Only in some cases", "Depends on JDK version"], correct: 0, hint: "import java.util.Scanner;" },
+                { q: "Write the import statement for Scanner:", type: "text", correct: "import java.util.Scanner", hint: "It's in java.util package" }
+            ],
+            6: [
+                { q: "Which method returns the absolute value of a number?", type: "multiple", options: ["Math.abs()", "Math.absolute()", "abs()", "absolute()"], correct: 0, hint: "Math class, abs method" },
+                { q: "What does Math.max(5, 10) return?", type: "multiple", options: ["10", "5", "15", "50"], correct: 0, hint: "Returns the maximum value" },
+                { q: "Write code to find the square root of 16 using Math class:", type: "text", correct: "Math.sqrt(16)", hint: "Math.sqrt() method" },
+                { q: "Which method rounds a number up to the nearest integer?", type: "multiple", options: ["Math.ceil()", "Math.round()", "Math.floor()", "Math.up()"], correct: 0, hint: "Ceiling function" },
+                { q: "What is the value of Math.PI?", type: "multiple", options: ["Approximately 3.14159", "3.14", "3.0", "22/7"], correct: 0, hint: "More precise than 3.14" },
+                { q: "How do you generate a random number between 0 and 1?", type: "text", correct: "Math.random()", hint: "Math.random() method" }
+            ],
+            7: [
+                { q: "What are the two possible values of a boolean?", type: "multiple", options: ["true and false", "1 and 0", "yes and no", "on and off"], correct: 0, hint: "Boolean literals" },
+                { q: "What is the default value of a boolean variable?", type: "multiple", options: ["false", "true", "0", "null"], correct: 0, hint: "Defaults to false" },
+                { q: "Write code to declare a boolean variable 'isActive' set to true:", type: "text", correct: "boolean isActive = true", hint: "boolean name = true;" },
+                { q: "Which operator negates a boolean value?", type: "multiple", options: ["!", "not", "~", "-"], correct: 0, hint: "Exclamation mark" },
+                { q: "What does (5 > 3) evaluate to?", type: "multiple", options: ["true", "false", "1", "5"], correct: 0, hint: "5 is greater than 3" },
+                { q: "Can you use boolean in arithmetic operations?", type: "multiple", options: ["No", "Yes", "Only with casting", "Only in some contexts"], correct: 0, hint: "Booleans are not numbers in Java" }
+            ],
+            8: [
+                { q: "What is the basic syntax of an if statement?", type: "multiple", options: ["if (condition) { }", "if condition then", "if [condition]", "if condition:"], correct: 0, hint: "Condition in parentheses, code in braces" },
+                { q: "Write an if statement that checks if x is greater than 10:", type: "text", correct: "if (x > 10)", hint: "if (x > 10)" },
+                { q: "What happens if the if condition is false and there's no else?", type: "multiple", options: ["Code inside if is skipped", "Error occurs", "Program stops", "Default action runs"], correct: 0, hint: "The if block is simply not executed" },
+                { q: "Which keyword is used for the alternative path?", type: "multiple", options: ["else", "otherwise", "alternate", "default"], correct: 0, hint: "Used with if" },
+                { q: "Can you have an if without else?", type: "multiple", options: ["Yes", "No", "Only in loops", "Only in methods"], correct: 0, hint: "else is optional" },
+                { q: "Write code for else if that checks if score equals 100:", type: "text", correct: "else if (score == 100)", hint: "else if (condition)" }
+            ],
+            9: [
+                { q: "What keyword is used to start a switch statement?", type: "multiple", options: ["switch", "select", "case", "choose"], correct: 0, hint: "switch keyword" },
+                { q: "Which keyword is used for each option in switch?", type: "multiple", options: ["case", "option", "when", "if"], correct: 0, hint: "Each case" },
+                { q: "Write the keyword used to exit a switch case:", type: "text", correct: "break", hint: "Prevents fall-through" },
+                { q: "What is the purpose of default in switch?", type: "multiple", options: ["Handles unmatched cases", "First case to execute", "Last case to execute", "Error handler"], correct: 0, hint: "Like else in if-else" },
+                { q: "Can you use strings in switch statements (Java 7+)?", type: "multiple", options: ["Yes", "No", "Only primitive types", "Only integers"], correct: 0, hint: "Since Java 7, yes" },
+                { q: "What happens if you forget break in a case?", type: "multiple", options: ["Fall-through to next case", "Error", "Loop repeats", "Switch exits"], correct: 0, hint: "Execution continues to next case" }
+            ],
+            10: [
+                { q: "What is the syntax of a while loop?", type: "multiple", options: ["while (condition) { }", "while condition do", "while [condition]", "loop while (condition)"], correct: 0, hint: "while (condition) followed by block" },
+                { q: "When does a while loop stop?", type: "multiple", options: ["When condition becomes false", "After first iteration", "After 10 iterations", "Never"], correct: 0, hint: "Checks condition before each iteration" },
+                { q: "Write a while loop that runs while x is less than 5:", type: "text", correct: "while (x < 5)", hint: "while (x < 5)" },
+                { q: "Can a while loop run zero times?", type: "multiple", options: ["Yes", "No", "Only if condition is null", "Only in special cases"], correct: 0, hint: "If condition is false initially" },
+                { q: "What is an infinite loop?", type: "multiple", options: ["Loop that never stops", "Loop that runs once", "Loop with errors", "Loop with break"], correct: 0, hint: "Condition never becomes false" },
+                { q: "Write the condition for an infinite while loop:", type: "text", correct: "while (true)", hint: "Use true as condition" }
+            ],
+            11: [
+                { q: "What are the three parts of a for loop?", type: "multiple", options: ["Initialization, condition, update", "Start, end, step", "Begin, check, increment", "Init, test, change"], correct: 0, hint: "Init; condition; update" },
+                { q: "Write a for loop that counts from 0 to 9:", type: "text", correct: "for (int i = 0; i < 10; i++)", hint: "for (int i = 0; i < 10; i++)" },
+                { q: "Which part of for loop is executed first?", type: "multiple", options: ["Initialization", "Condition", "Update", "Loop body"], correct: 0, hint: "Runs once at the start" },
+                { q: "When is the update statement executed?", type: "multiple", options: ["After each iteration", "Before each iteration", "Only at the end", "Only at the start"], correct: 0, hint: "After the loop body" },
+                { q: "Can you use for loop to iterate over arrays?", type: "multiple", options: ["Yes", "No", "Only with ArrayList", "Only with collections"], correct: 0, hint: "Perfect for arrays" },
+                { q: "What is a for-each loop used for?", type: "multiple", options: ["Iterating over collections", "Counting", "Infinite loops", "Nested loops"], correct: 0, hint: "Enhanced for loop" }
+            ],
+            12: [
+                { q: "What does the break statement do in a loop?", type: "multiple", options: ["Exits the loop immediately", "Skips current iteration", "Pauses the loop", "Restarts the loop"], correct: 0, hint: "Terminates the loop" },
+                { q: "What does the continue statement do?", type: "multiple", options: ["Skips to next iteration", "Exits the loop", "Breaks the loop", "Pauses execution"], correct: 0, hint: "Skips remaining code in current iteration" },
+                { q: "Write the statement to exit a loop:", type: "text", correct: "break", hint: "break keyword" },
+                { q: "Write the statement to skip to the next iteration:", type: "text", correct: "continue", hint: "continue keyword" },
+                { q: "Can break be used in switch statements?", type: "multiple", options: ["Yes", "No", "Only in loops", "Only with if"], correct: 0, hint: "Commonly used in switch" },
+                { q: "What happens after continue is executed?", type: "multiple", options: ["Jump to loop condition check", "Exit loop", "Skip entire loop", "Throw error"], correct: 0, hint: "Goes back to check condition" }
+            ],
+            13: [
+                { q: "How do you declare an integer array of size 5?", type: "text", correct: "int[] array = new int[5]", hint: "int[] name = new int[size];" },
+                { q: "What is the index of the first element in an array?", type: "multiple", options: ["0", "1", "-1", "Depends on declaration"], correct: 0, hint: "Arrays are zero-indexed" },
+                { q: "How do you get the length of an array?", type: "text", correct: "array.length", hint: "Use .length property (no parentheses)" },
+                { q: "Can array size change after creation?", type: "multiple", options: ["No", "Yes", "Only if resized", "Only with ArrayList"], correct: 0, hint: "Arrays have fixed size" },
+                { q: "What happens if you access an invalid array index?", type: "multiple", options: ["ArrayIndexOutOfBoundsException", "Returns null", "Returns 0", "Compilation error"], correct: 0, hint: "Runtime exception" },
+                { q: "Write code to create and initialize an array with values 1, 2, 3:", type: "text", correct: "int[] arr = {1, 2, 3}", hint: "Use curly braces" }
+            ],
+            14: [
+                { q: "How do you declare a 2D array with 3 rows and 4 columns?", type: "text", correct: "int[][] array = new int[3][4]", hint: "int[][] name = new int[rows][cols];" },
+                { q: "What is a 2D array also known as?", type: "multiple", options: ["Matrix", "Grid array", "Double array", "Nested array"], correct: 0, hint: "Common mathematical term" },
+                { q: "How do you access element at row 1, column 2?", type: "text", correct: "array[1][2]", hint: "array[row][col]" },
+                { q: "Can you have arrays with more than 2 dimensions?", type: "multiple", options: ["Yes", "No", "Only up to 2D", "Only in special cases"], correct: 0, hint: "3D, 4D arrays are possible" },
+                { q: "How do you get the number of rows in a 2D array?", type: "text", correct: "array.length", hint: "Same as 1D array" },
+                { q: "How many loops are needed to iterate a 2D array?", type: "multiple", options: ["2", "1", "3", "Depends on size"], correct: 0, hint: "Nested loops" }
+            ],
+            15: [
+                { q: "What keyword is used to define a method?", type: "multiple", options: ["No specific keyword", "method", "function", "def"], correct: 0, hint: "Just use return type and name" },
+                { q: "Write a method signature for a method named 'greet' that returns void:", type: "text", correct: "void greet()", hint: "returnType methodName()" },
+                { q: "What does void mean as a return type?", type: "multiple", options: ["Method returns nothing", "Method returns null", "Method is empty", "Method has no parameters"], correct: 0, hint: "No return value" },
+                { q: "How do you call a method named calculate()?", type: "text", correct: "calculate()", hint: "methodName();" },
+                { q: "Can a method return a value?", type: "multiple", options: ["Yes", "No", "Only integers", "Only if void"], correct: 0, hint: "Use return keyword" },
+                { q: "What keyword is used to return a value from a method?", type: "text", correct: "return", hint: "return keyword" }
+            ],
+            16: [
+                { q: "What are method parameters?", type: "multiple", options: ["Values passed to method", "Return values", "Method names", "Local variables"], correct: 0, hint: "Input to the method" },
+                { q: "Write a method that takes an int parameter named 'age':", type: "text", correct: "void method(int age)", hint: "void methodName(type param)" },
+                { q: "Can a method have multiple parameters?", type: "multiple", options: ["Yes", "No", "Maximum 2", "Only same types"], correct: 0, hint: "Separate with commas" },
+                { q: "What are the values passed when calling a method called?", type: "multiple", options: ["Arguments", "Parameters", "Inputs", "Variables"], correct: 0, hint: "Arguments are passed, parameters are received" },
+                { q: "Write a method call for add(5, 3):", type: "text", correct: "add(5, 3)", hint: "methodName(arg1, arg2);" },
+                { q: "Must argument types match parameter types?", type: "multiple", options: ["Yes", "No", "Sometimes", "Only for primitives"], correct: 0, hint: "Type safety" }
+            ],
+            17: [
+                { q: "What is method overloading?", type: "multiple", options: ["Multiple methods with same name", "Method with multiple returns", "Method calling itself", "Method with many parameters"], correct: 0, hint: "Same name, different signatures" },
+                { q: "Can two methods have the same name and parameters?", type: "multiple", options: ["No", "Yes", "Only if different return types", "Only in different classes"], correct: 0, hint: "Must have different signatures" },
+                { q: "What makes overloaded methods different?", type: "multiple", options: ["Number or type of parameters", "Return type", "Method name", "Access modifier"], correct: 0, hint: "Parameter list must differ" },
+                { q: "Write two overloaded method signatures for 'print':", type: "text", correct: "void print(int x)", hint: "Different parameter types or counts" },
+                { q: "Is method overloading compile-time or runtime polymorphism?", type: "multiple", options: ["Compile-time", "Runtime", "Both", "Neither"], correct: 0, hint: "Decided at compile time" },
+                { q: "Can you overload methods with different return types only?", type: "multiple", options: ["No", "Yes", "Sometimes", "Depends on parameters"], correct: 0, hint: "Return type alone is not enough" }
+            ],
+            18: [
+                { q: "What is variable scope?", type: "multiple", options: ["Where variable can be accessed", "Variable type", "Variable value", "Variable size"], correct: 0, hint: "Visibility of variables" },
+                { q: "Where can local variables be accessed?", type: "multiple", options: ["Only within their method", "Throughout the class", "In all classes", "Globally"], correct: 0, hint: "Local to the method" },
+                { q: "What are instance variables?", type: "multiple", options: ["Variables declared in class", "Variables in methods", "Static variables", "Final variables"], correct: 0, hint: "Belong to object instances" },
+                { q: "Can a local variable have the same name as an instance variable?", type: "multiple", options: ["Yes", "No", "Only with this keyword", "Only if different types"], correct: 0, hint: "Local shadows instance" },
+                { q: "Write the keyword to refer to current object's instance variable:", type: "text", correct: "this", hint: "this keyword" },
+                { q: "Do local variables have default values?", type: "multiple", options: ["No", "Yes", "Only primitives", "Only objects"], correct: 0, hint: "Must be initialized" }
+            ],
+            19: [
+                { q: "What is recursion?", type: "multiple", options: ["Method calling itself", "Method calling another method", "Loop inside method", "Method with multiple returns"], correct: 0, hint: "Self-referential call" },
+                { q: "What is needed to stop infinite recursion?", type: "multiple", options: ["Base case", "Loop", "Break statement", "Return statement"], correct: 0, hint: "Termination condition" },
+                { q: "Write a base case for factorial recursion (n equals 0 or 1):", type: "text", correct: "if (n <= 1) return 1", hint: "Check if n <= 1" },
+                { q: "What error occurs with infinite recursion?", type: "multiple", options: ["StackOverflowError", "OutOfMemoryError", "RecursionError", "InfiniteLoopError"], correct: 0, hint: "Call stack overflow" },
+                { q: "Is recursion always better than iteration?", type: "multiple", options: ["No", "Yes", "For simple problems", "For complex problems"], correct: 0, hint: "Each has its use cases" },
+                { q: "Can every recursive solution be converted to iterative?", type: "multiple", options: ["Yes", "No", "Only simple ones", "Only tail recursion"], correct: 0, hint: "Theoretically yes" }
+            ],
+            20: [
+                { q: "What does OOP stand for?", type: "multiple", options: ["Object-Oriented Programming", "Object-Oriented Process", "Operating Object Program", "Objective Oriented Programming"], correct: 0, hint: "Core programming paradigm" },
+                { q: "What are the four main principles of OOP?", type: "multiple", options: ["Encapsulation, Inheritance, Polymorphism, Abstraction", "Classes, Objects, Methods, Variables", "Public, Private, Protected, Default", "Data, Methods, Properties, Events"], correct: 0, hint: "Four pillars of OOP" },
+                { q: "What is an object?", type: "multiple", options: ["Instance of a class", "Blueprint for class", "Data type", "Method collection"], correct: 0, hint: "Created from a class" },
+                { q: "What is a class?", type: "multiple", options: ["Blueprint for objects", "Instance of object", "Type of method", "Collection of data"], correct: 0, hint: "Template for creating objects" },
+                { q: "Write the keyword to create an object:", type: "text", correct: "new", hint: "new keyword" },
+                { q: "Is Java a purely object-oriented language?", type: "multiple", options: ["No (has primitives)", "Yes", "Partially", "Depends on version"], correct: 0, hint: "Has primitive types" }
+            ],
+            21: [
+                { q: "How do you declare a class named 'Person'?", type: "text", correct: "class Person", hint: "class ClassName" },
+                { q: "What keyword creates an object from a class?", type: "text", correct: "new", hint: "new keyword" },
+                { q: "Write code to create an object of class Car named myCar:", type: "text", correct: "Car myCar = new Car()", hint: "ClassName objName = new ClassName();" },
+                { q: "Can a class have multiple objects?", type: "multiple", options: ["Yes", "No", "Only one", "Maximum 10"], correct: 0, hint: "Many instances from one class" },
+                { q: "What is the relationship between class and object?", type: "multiple", options: ["Class is blueprint, object is instance", "Object is blueprint, class is instance", "They are the same", "No relationship"], correct: 0, hint: "Class defines, object instantiates" },
+                { q: "Where is the object stored in memory?", type: "multiple", options: ["Heap", "Stack", "RAM", "Cache"], correct: 0, hint: "Dynamic memory allocation" }
+            ],
+            22: [
+                { q: "What are class attributes also called?", type: "multiple", options: ["Fields or properties", "Methods", "Functions", "Parameters"], correct: 0, hint: "Instance variables" },
+                { q: "Write code to declare an integer attribute 'age' in a class:", type: "text", correct: "int age", hint: "type attributeName;" },
+                { q: "How do you access an object's attribute?", type: "text", correct: "object.attribute", hint: "Use dot notation" },
+                { q: "Can attributes have initial values?", type: "multiple", options: ["Yes", "No", "Only primitives", "Only in constructor"], correct: 0, hint: "Can be initialized" },
+                { q: "What is the default access modifier for class attributes?", type: "multiple", options: ["Package-private (default)", "Public", "Private", "Protected"], correct: 0, hint: "No modifier means package-private" },
+                { q: "Should attributes usually be private?", type: "multiple", options: ["Yes", "No", "Doesn't matter", "Only for sensitive data"], correct: 0, hint: "Encapsulation principle" }
+            ],
+            23: [
+                { q: "What is a class method?", type: "multiple", options: ["Function defined in class", "Class variable", "Class attribute", "Constructor"], correct: 0, hint: "Behavior of the class" },
+                { q: "Write a simple method declaration 'display' that returns void:", type: "text", correct: "void display()", hint: "returnType methodName()" },
+                { q: "How do you call a method on an object?", type: "text", correct: "object.method()", hint: "object.methodName();" },
+                { q: "Can methods access class attributes?", type: "multiple", options: ["Yes", "No", "Only public ones", "Only with this"], correct: 0, hint: "Methods operate on attributes" },
+                { q: "What keyword refers to the current object?", type: "text", correct: "this", hint: "this keyword" },
+                { q: "Can you have a method with the same name as an attribute?", type: "multiple", options: ["Yes", "No", "Only if different types", "Not recommended"], correct: 0, hint: "Allowed but use this to differentiate" }
+            ],
+            24: [
+                { q: "What is a constructor?", type: "multiple", options: ["Special method to initialize objects", "Regular method", "Class variable", "Destructor"], correct: 0, hint: "Called when object is created" },
+                { q: "Does a constructor have a return type?", type: "multiple", options: ["No", "Yes, void", "Yes, the class type", "Yes, Object"], correct: 0, hint: "No return type" },
+                { q: "Write a constructor for class Student:", type: "text", correct: "Student()", hint: "ClassName() { }" },
+                { q: "When is a constructor called?", type: "multiple", options: ["When object is created with new", "When method is called", "When class is loaded", "Manually"], correct: 0, hint: "During object instantiation" },
+                { q: "Can a class have multiple constructors?", type: "multiple", options: ["Yes", "No", "Only two", "Only with different names"], correct: 0, hint: "Constructor overloading" },
+                { q: "What is a default constructor?", type: "multiple", options: ["No-argument constructor", "First constructor", "Constructor with all parameters", "Compiler-generated constructor"], correct: 0, hint: "Takes no parameters" }
+            ],
+            25: [
+                { q: "What are the four access modifiers in Java?", type: "multiple", options: ["public, private, protected, default", "public, private, internal, external", "open, closed, protected, private", "visible, hidden, protected, default"], correct: 0, hint: "Four levels of visibility" },
+                { q: "Which modifier makes a member accessible everywhere?", type: "text", correct: "public", hint: "Most permissive" },
+                { q: "Which modifier restricts access to the same class only?", type: "text", correct: "private", hint: "Most restrictive" },
+                { q: "What does the static modifier mean?", type: "multiple", options: ["Belongs to class, not instance", "Cannot be changed", "Private by default", "Final value"], correct: 0, hint: "Class-level member" },
+                { q: "What does the final modifier do?", type: "multiple", options: ["Makes value unchangeable", "Makes method static", "Makes class abstract", "Makes variable public"], correct: 0, hint: "Constant value" },
+                { q: "Can you access a static method without creating an object?", type: "multiple", options: ["Yes", "No", "Only if public", "Only in main"], correct: 0, hint: "ClassName.methodName()" }
+            ],
+            26: [
+                { q: "What is encapsulation?", type: "multiple", options: ["Hiding internal details", "Inheriting properties", "Multiple forms", "Abstract concepts"], correct: 0, hint: "Data hiding principle" },
+                { q: "Why use encapsulation?", type: "multiple", options: ["Data protection and security", "Faster code", "Less memory", "Easier syntax"], correct: 0, hint: "Protect data integrity" },
+                { q: "Should class fields be private or public?", type: "multiple", options: ["Private", "Public", "Protected", "Doesn't matter"], correct: 0, hint: "Best practice is private" },
+                { q: "How do you access private fields from outside the class?", type: "multiple", options: ["Through public methods", "Directly", "Cannot access", "Using this keyword"], correct: 0, hint: "Getters and setters" },
+                { q: "What is data hiding?", type: "multiple", options: ["Making fields private", "Deleting data", "Compressing data", "Encrypting data"], correct: 0, hint: "Core of encapsulation" },
+                { q: "Write the modifier to make a field private:", type: "text", correct: "private", hint: "private keyword" }
+            ],
+            27: [
+                { q: "What is a getter method?", type: "multiple", options: ["Method that returns field value", "Method that sets value", "Constructor", "Static method"], correct: 0, hint: "Accessor method" },
+                { q: "What is a setter method?", type: "multiple", options: ["Method that sets field value", "Method that gets value", "Destructor", "Factory method"], correct: 0, hint: "Mutator method" },
+                { q: "Write a getter method for private field 'name':", type: "text", correct: "getName()", hint: "getFieldName()" },
+                { q: "Write a setter method for private field 'age':", type: "text", correct: "setAge", hint: "setFieldName(type value)" },
+                { q: "Should getters and setters be public?", type: "multiple", options: ["Yes", "No", "Private", "Protected"], correct: 0, hint: "Public to access private fields" },
+                { q: "What is the naming convention for a getter of boolean field 'active'?", type: "text", correct: "isActive", hint: "is + FieldName for booleans" }
+            ],
+            28: [
+                { q: "Why make fields private?", type: "multiple", options: ["Control access and validation", "Save memory", "Faster execution", "Required by Java"], correct: 0, hint: "Encapsulation and control" },
+                { q: "Write code to declare a private integer field 'id':", type: "text", correct: "private int id", hint: "private type fieldName;" },
+                { q: "Can private fields be accessed from subclasses?", type: "multiple", options: ["No", "Yes", "Only with super", "Only if protected"], correct: 0, hint: "Not directly accessible" },
+                { q: "What's the benefit of using setters instead of public fields?", type: "multiple", options: ["Can validate input", "Faster access", "Less code", "No benefit"], correct: 0, hint: "Add validation logic" },
+                { q: "Can you have a getter without a setter?", type: "multiple", options: ["Yes", "No", "Not recommended", "Only for final fields"], correct: 0, hint: "Read-only properties" },
+                { q: "What principle does making fields private support?", type: "text", correct: "encapsulation", hint: "One of the OOP pillars" }
+            ],
+            29: [
+                { q: "What is data hiding in OOP?", type: "multiple", options: ["Restricting direct data access", "Encrypting data", "Deleting data", "Compressing data"], correct: 0, hint: "Using private access" },
+                { q: "Which access modifier best supports data hiding?", type: "text", correct: "private", hint: "Most restrictive" },
+                { q: "Why hide implementation details?", type: "multiple", options: ["Flexibility to change internally", "Confuse users", "Save space", "Required by compiler"], correct: 0, hint: "Internal changes won't break external code" },
+                { q: "What is information hiding?", type: "multiple", options: ["Hiding how something works", "Hiding variable names", "Removing comments", "Obfuscating code"], correct: 0, hint: "Show what, hide how" },
+                { q: "Should internal helper methods be private?", type: "multiple", options: ["Yes", "No", "Public", "Doesn't matter"], correct: 0, hint: "Not part of public API" },
+                { q: "Can private members be accessed in the same class?", type: "multiple", options: ["Yes", "No", "Only in methods", "Only in constructors"], correct: 0, hint: "Accessible within the class" }
+            ],
+            30: [
+                { q: "What is a Java package?", type: "multiple", options: ["Grouping of related classes", "Compressed file", "Single class file", "Method collection"], correct: 0, hint: "Namespace for classes" },
+                { q: "Write the keyword to declare a package:", type: "text", correct: "package", hint: "package keyword" },
+                { q: "What statement imports a class from another package?", type: "text", correct: "import", hint: "import keyword" },
+                { q: "Does package name affect class access?", type: "multiple", options: ["Yes", "No", "Only for public classes", "Only for private classes"], correct: 0, hint: "Package-private access" },
+                { q: "What is the default package?", type: "multiple", options: ["Unnamed package", "java.lang", "java.util", "No package"], correct: 0, hint: "When no package is declared" },
+                { q: "Should you always use packages?", type: "multiple", options: ["Yes for real projects", "No", "Optional", "Only for large projects"], correct: 0, hint: "Best practice" }
+            ],
+            31: [
+                { q: "What is inheritance?", type: "multiple", options: ["Acquiring properties from parent class", "Creating new class", "Hiding data", "Multiple forms"], correct: 0, hint: "IS-A relationship" },
+                { q: "Write the keyword used for inheritance:", type: "text", correct: "extends", hint: "extends keyword" },
+                { q: "Write code for class Dog to inherit from class Animal:", type: "text", correct: "class Dog extends Animal", hint: "class Child extends Parent" },
+                { q: "What is a parent class also called?", type: "multiple", options: ["Superclass or base class", "Subclass", "Child class", "Derived class"], correct: 0, hint: "Super/base class" },
+                { q: "What is a child class also called?", type: "multiple", options: ["Subclass or derived class", "Superclass", "Parent class", "Base class"], correct: 0, hint: "Sub/derived class" },
+                { q: "Does Java support multiple inheritance with classes?", type: "multiple", options: ["No", "Yes", "Only with interfaces", "Only with abstract classes"], correct: 0, hint: "Single inheritance only" }
+            ],
+            32: [
+                { q: "What members does a subclass inherit?", type: "multiple", options: ["Public and protected members", "All members", "Only public", "Only private"], correct: 0, hint: "Not private members" },
+                { q: "Can a subclass access private members of superclass?", type: "multiple", options: ["No", "Yes", "Only with super", "Only protected ones"], correct: 0, hint: "Private is not inherited" },
+                { q: "What does a subclass add to a superclass?", type: "multiple", options: ["Additional members or behavior", "Nothing", "Only overrides", "Only constructors"], correct: 0, hint: "Extends functionality" },
+                { q: "Write a class Cat that extends Animal:", type: "text", correct: "class Cat extends Animal", hint: "class Name extends Parent" },
+                { q: "Is 'IS-A' or 'HAS-A' the relationship in inheritance?", type: "multiple", options: ["IS-A", "HAS-A", "Both", "Neither"], correct: 0, hint: "IS-A relationship" },
+                { q: "Can a subclass have its own unique methods?", type: "multiple", options: ["Yes", "No", "Only if abstract", "Only if final"], correct: 0, hint: "Can add new methods" }
+            ],
+            33: [
+                { q: "What does the super keyword do?", type: "multiple", options: ["Refers to parent class", "Refers to current class", "Creates object", "Returns value"], correct: 0, hint: "Access superclass members" },
+                { q: "Write code to call parent class constructor:", type: "text", correct: "super()", hint: "super(); in constructor" },
+                { q: "How do you call a superclass method using super?", type: "text", correct: "super.methodName()", hint: "super.methodName()" },
+                { q: "Where must super() be placed in constructor?", type: "multiple", options: ["First line", "Last line", "Anywhere", "Not required"], correct: 0, hint: "Must be first statement" },
+                { q: "Can you use super to access private parent members?", type: "multiple", options: ["No", "Yes", "Only methods", "Only fields"], correct: 0, hint: "Private is not accessible" },
+                { q: "Is super() called automatically?", type: "multiple", options: ["Yes, if not explicit", "No", "Only if no params", "Only in abstract classes"], correct: 0, hint: "Implicit call to no-arg constructor" }
+            ],
+            34: [
+                { q: "What is method overriding?", type: "multiple", options: ["Redefining parent method in child", "Multiple methods same name", "Method calling itself", "Private method"], correct: 0, hint: "Same signature in subclass" },
+                { q: "What annotation is used for overriding?", type: "text", correct: "@Override", hint: "@Override annotation" },
+                { q: "Must overriding method have same signature?", type: "multiple", options: ["Yes", "No", "Only name", "Only return type"], correct: 0, hint: "Exact same signature" },
+                { q: "Can you override private methods?", type: "multiple", options: ["No", "Yes", "Only in same package", "Only with super"], correct: 0, hint: "Private methods not inherited" },
+                { q: "Can you override static methods?", type: "multiple", options: ["No (method hiding)", "Yes", "Sometimes", "Only final ones"], correct: 0, hint: "Static methods are hidden, not overridden" },
+                { q: "What's the difference between overloading and overriding?", type: "multiple", options: ["Overloading: same name different params, Overriding: same signature", "Both are same", "Overloading in subclass, overriding in same class", "No difference"], correct: 0, hint: "Different concepts" }
+            ],
+            35: [
+                { q: "What does the final keyword do for a class?", type: "multiple", options: ["Prevents inheritance", "Makes it abstract", "Makes it private", "Requires constructor"], correct: 0, hint: "Cannot be extended" },
+                { q: "What does final do for a method?", type: "multiple", options: ["Prevents overriding", "Makes it static", "Makes it private", "Makes it abstract"], correct: 0, hint: "Cannot be overridden" },
+                { q: "What does final do for a variable?", type: "multiple", options: ["Makes it constant", "Makes it static", "Makes it private", "Makes it null"], correct: 0, hint: "Value cannot change" },
+                { q: "Write code to declare a final variable PI with value 3.14:", type: "text", correct: "final double PI = 3.14", hint: "final type NAME = value;" },
+                { q: "Can a final class be extended?", type: "multiple", options: ["No", "Yes", "Only by one class", "Only abstract classes"], correct: 0, hint: "Cannot be subclassed" },
+                { q: "Must final variables be initialized?", type: "multiple", options: ["Yes", "No", "Only primitives", "Only static ones"], correct: 0, hint: "Must have a value" }
+            ],
+            36: [
+                { q: "What is polymorphism?", type: "multiple", options: ["One interface, multiple implementations", "Multiple classes", "Data hiding", "Code reuse"], correct: 0, hint: "Many forms" },
+                { q: "What are the two types of polymorphism?", type: "multiple", options: ["Compile-time and Runtime", "Static and Dynamic", "Early and Late binding", "All of the above"], correct: 3, hint: "All names are correct" },
+                { q: "What enables runtime polymorphism?", type: "multiple", options: ["Method overriding", "Method overloading", "Constructors", "Static methods"], correct: 0, hint: "Overriding" },
+                { q: "What enables compile-time polymorphism?", type: "multiple", options: ["Method overloading", "Method overriding", "Inheritance", "Interfaces"], correct: 0, hint: "Overloading" },
+                { q: "Can a parent reference hold a child object?", type: "multiple", options: ["Yes", "No", "Only with casting", "Only final classes"], correct: 0, hint: "Upcasting" },
+                { q: "Write code for parent reference pointing to child object:", type: "text", correct: "Parent obj = new Child()", hint: "Parent ref = new Child();" }
+            ],
+            37: [
+                { q: "What is runtime polymorphism also called?", type: "multiple", options: ["Dynamic binding or late binding", "Static binding", "Early binding", "Compile-time binding"], correct: 0, hint: "Decided at runtime" },
+                { q: "Which method version is called in runtime polymorphism?", type: "multiple", options: ["Based on object type", "Based on reference type", "First defined", "Last defined"], correct: 0, hint: "Actual object determines method" },
+                { q: "Is method overriding required for runtime polymorphism?", type: "multiple", options: ["Yes", "No", "Sometimes", "Only for interfaces"], correct: 0, hint: "Overriding enables it" },
+                { q: "Can static methods show runtime polymorphism?", type: "multiple", options: ["No", "Yes", "Sometimes", "Only if final"], correct: 0, hint: "Static methods don't override" },
+                { q: "What is dynamic method dispatch?", type: "multiple", options: ["Calling overridden method at runtime", "Calling any method", "Static method call", "Constructor call"], correct: 0, hint: "Runtime method resolution" },
+                { q: "Write example of upcasting:", type: "text", correct: "Animal a = new Dog()", hint: "Parent ref = new Child();" }
+            ],
+            38: [
+                { q: "What is compile-time polymorphism also called?", type: "multiple", options: ["Static binding or early binding", "Dynamic binding", "Late binding", "Runtime binding"], correct: 0, hint: "Decided at compile time" },
+                { q: "Which feature provides compile-time polymorphism?", type: "multiple", options: ["Method overloading", "Method overriding", "Inheritance", "Encapsulation"], correct: 0, hint: "Overloading" },
+                { q: "When is the method call resolved in compile-time polymorphism?", type: "multiple", options: ["At compile time", "At runtime", "During execution", "Never"], correct: 0, hint: "Compiler decides" },
+                { q: "Can constructors be overloaded?", type: "multiple", options: ["Yes", "No", "Only one constructor", "Only with parameters"], correct: 0, hint: "Constructor overloading" },
+                { q: "Is operator overloading supported in Java?", type: "multiple", options: ["No", "Yes", "Only for +", "Only custom classes"], correct: 0, hint: "Not supported" },
+                { q: "Which is faster: compile-time or runtime polymorphism?", type: "multiple", options: ["Compile-time", "Runtime", "Same speed", "Depends on JVM"], correct: 0, hint: "No runtime overhead" }
+            ],
+            39: [
+                { q: "What does the instanceof operator do?", type: "multiple", options: ["Checks if object is instance of class", "Creates instance", "Compares two objects", "Returns class name"], correct: 0, hint: "Type checking" },
+                { q: "Write code to check if obj is instance of String:", type: "text", correct: "obj instanceof String", hint: "obj instanceof Type" },
+                { q: "What does instanceof return?", type: "multiple", options: ["boolean", "int", "Object", "Class"], correct: 0, hint: "true or false" },
+                { q: "Can instanceof be used with null?", type: "multiple", options: ["Yes (returns false)", "No (error)", "Yes (returns true)", "Depends on type"], correct: 0, hint: "null is not an instance of any class" },
+                { q: "Will child instanceof parent return true?", type: "multiple", options: ["Yes", "No", "Only if cast", "Compile error"], correct: 0, hint: "Child is a type of parent" },
+                { q: "When should you use instanceof?", type: "multiple", options: ["Before casting", "After casting", "Never", "Always"], correct: 0, hint: "Prevent ClassCastException" }
+            ],
+            40: [
+                { q: "What is abstraction?", type: "multiple", options: ["Hiding implementation details", "Showing all details", "Data hiding", "Code reuse"], correct: 0, hint: "Show what, hide how" },
+                { q: "What are the two ways to achieve abstraction?", type: "multiple", options: ["Abstract classes and interfaces", "Classes and objects", "Methods and variables", "Public and private"], correct: 0, hint: "Abstract classes and interfaces" },
+                { q: "Why use abstraction?", type: "multiple", options: ["Reduce complexity", "Increase code", "Slow execution", "Confuse developers"], correct: 0, hint: "Simplify complex systems" },
+                { q: "Does abstraction hide data or implementation?", type: "multiple", options: ["Implementation", "Data", "Both", "Neither"], correct: 0, hint: "How something works" },
+                { q: "Is abstraction different from encapsulation?", type: "multiple", options: ["Yes", "No", "Same thing", "Sometimes"], correct: 0, hint: "Different concepts" },
+                { q: "Give an example of abstraction in real life:", type: "multiple", options: ["Car driving (don't need to know engine)", "Recipe with all steps", "Blueprint showing everything", "None"], correct: 0, hint: "User sees interface, not complexity" }
+            ],
+            41: [
+                { q: "Write the keyword to declare an abstract class:", type: "text", correct: "abstract class", hint: "abstract class ClassName" },
+                { q: "Can you create an object of an abstract class?", type: "multiple", options: ["No", "Yes", "Only with new", "Only if all methods implemented"], correct: 0, hint: "Cannot instantiate" },
+                { q: "Can an abstract class have constructors?", type: "multiple", options: ["Yes", "No", "Only default", "Only with parameters"], correct: 0, hint: "Yes, called by subclass" },
+                { q: "Can an abstract class have concrete methods?", type: "multiple", options: ["Yes", "No", "Only static", "Only private"], correct: 0, hint: "Can have both abstract and concrete" },
+                { q: "Must abstract class have abstract methods?", type: "multiple", options: ["No", "Yes", "At least one", "All methods abstract"], correct: 0, hint: "Not required" },
+                { q: "Write declaration for abstract class Animal:", type: "text", correct: "abstract class Animal", hint: "abstract class Name" }
+            ],
+            42: [
+                { q: "Write declaration for abstract method 'move':", type: "text", correct: "abstract void move()", hint: "abstract returnType methodName();" },
+                { q: "Do abstract methods have a body?", type: "multiple", options: ["No", "Yes", "Optional", "Only in interfaces"], correct: 0, hint: "No implementation" },
+                { q: "Where must abstract methods be implemented?", type: "multiple", options: ["In subclass", "In same class", "Nowhere", "In interface"], correct: 0, hint: "Concrete subclass" },
+                { q: "Can abstract methods be private?", type: "multiple", options: ["No", "Yes", "Only in abstract classes", "Only if final"], correct: 0, hint: "Must be overrideable" },
+                { q: "Can abstract methods be static?", type: "multiple", options: ["No", "Yes", "Sometimes", "Only in interfaces"], correct: 0, hint: "Static cannot be overridden" },
+                { q: "What happens if subclass doesn't implement abstract method?", type: "multiple", options: ["Subclass must also be abstract", "Compile error", "Runtime error", "Nothing"], correct: 0, hint: "Must be abstract or implement all" }
+            ],
+            43: [
+                { q: "Write the keyword to declare an interface:", type: "text", correct: "interface", hint: "interface InterfaceName" },
+                { q: "What keyword is used to implement an interface?", type: "text", correct: "implements", hint: "implements keyword" },
+                { q: "Write code for class Dog to implement interface Animal:", type: "text", correct: "class Dog implements Animal", hint: "class Name implements Interface" },
+                { q: "Are all methods in an interface abstract by default?", type: "multiple", options: ["Yes (before Java 8)", "No", "Only public ones", "Depends"], correct: 0, hint: "Implicitly abstract" },
+                { q: "Can an interface have variables?", type: "multiple", options: ["Yes (public static final)", "No", "Only private", "Only instance variables"], correct: 0, hint: "Constants only" },
+                { q: "Can a class implement multiple interfaces?", type: "multiple", options: ["Yes", "No", "Maximum 2", "Only if related"], correct: 0, hint: "Multiple implementation" }
+            ],
+            44: [
+                { q: "Write code for class implementing two interfaces A and B:", type: "text", correct: "class C implements A, B", hint: "class Name implements I1, I2" },
+                { q: "Why does Java allow multiple interface implementation?", type: "multiple", options: ["No diamond problem", "Better performance", "Simpler syntax", "Historical reasons"], correct: 0, hint: "Interfaces only have declarations" },
+                { q: "What if two interfaces have same method signature?", type: "multiple", options: ["One implementation satisfies both", "Compile error", "Must implement twice", "Cannot implement both"], correct: 0, hint: "Single implementation works" },
+                { q: "Can an interface extend another interface?", type: "multiple", options: ["Yes", "No", "Only abstract interfaces", "Only with implements"], correct: 0, hint: "interface extends interface" },
+                { q: "Can an interface extend multiple interfaces?", type: "multiple", options: ["Yes", "No", "Maximum 2", "Only one"], correct: 0, hint: "Multiple extension allowed" },
+                { q: "Do you need to use @Override for interface methods?", type: "multiple", options: ["Optional but recommended", "Required", "Not allowed", "Only for Java 8+"], correct: 0, hint: "Good practice" }
+            ],
+            45: [
+                { q: "What is an inner class?", type: "multiple", options: ["Class defined inside another class", "Private class", "Abstract class", "Interface implementation"], correct: 0, hint: "Nested class" },
+                { q: "Can inner class access outer class members?", type: "multiple", options: ["Yes", "No", "Only public", "Only static"], correct: 0, hint: "Has access to outer class" },
+                { q: "Write declaration of inner class Inside within class Outside:", type: "text", correct: "class Inside", hint: "Just class Inside inside Outside" },
+                { q: "How do you create an instance of inner class from outside?", type: "text", correct: "outer.new Inner()", hint: "outerObj.new InnerClass()" },
+                { q: "Can inner class be private?", type: "multiple", options: ["Yes", "No", "Only public", "Only protected"], correct: 0, hint: "Any access modifier" },
+                { q: "Why use inner classes?", type: "multiple", options: ["Logical grouping and encapsulation", "Better performance", "Required by Java", "Simpler syntax"], correct: 0, hint: "Organize related classes" }
+            ],
+            46: [
+                { q: "What is a static nested class?", type: "multiple", options: ["Static class inside another class", "Class with static methods", "Final class", "Abstract class"], correct: 0, hint: "Declared with static" },
+                { q: "Can static nested class access outer instance members?", type: "multiple", options: ["No", "Yes", "Only public", "Only protected"], correct: 0, hint: "Cannot access instance members" },
+                { q: "Write declaration of static nested class:", type: "text", correct: "static class Nested", hint: "static class ClassName" },
+                { q: "How to create instance of static nested class?", type: "text", correct: "Outer.Nested obj = new Outer.Nested()", hint: "Outer.Inner obj = new Outer.Inner();" },
+                { q: "Can static nested class have instance variables?", type: "multiple", options: ["Yes", "No", "Only static", "Only final"], correct: 0, hint: "Normal class, just nested" },
+                { q: "Why use static nested class?", type: "multiple", options: ["Packaging convenience", "Access private members", "Better performance", "Required pattern"], correct: 0, hint: "Organization" }
+            ],
+            47: [
+                { q: "What is an anonymous class?", type: "multiple", options: ["Class without a name", "Private class", "Abstract class", "Final class"], correct: 0, hint: "No identifier" },
+                { q: "When are anonymous classes typically used?", type: "multiple", options: ["One-time use implementations", "Multiple inheritance", "Static methods", "Constructors"], correct: 0, hint: "Single use" },
+                { q: "Can anonymous class have constructors?", type: "multiple", options: ["No", "Yes", "Only default", "Only parameterized"], correct: 0, hint: "No name, no constructor" },
+                { q: "Can anonymous class extend a class?", type: "multiple", options: ["Yes", "No", "Only abstract", "Only final"], correct: 0, hint: "Can extend or implement" },
+                { q: "Can anonymous class implement an interface?", type: "multiple", options: ["Yes", "No", "Only one", "Only functional"], correct: 0, hint: "Common use case" },
+                { q: "Are anonymous classes used with event listeners?", type: "multiple", options: ["Yes", "No", "Never", "Only in Swing"], correct: 0, hint: "Common in GUI programming" }
+            ],
+            48: [
+                { q: "Write the keyword to declare an enum:", type: "text", correct: "enum", hint: "enum keyword" },
+                { q: "What is an enumeration in Java?", type: "multiple", options: ["Special class for constants", "Array of integers", "Collection type", "Loop type"], correct: 0, hint: "Named constants" },
+                { q: "Write an enum declaration for days of week:", type: "text", correct: "enum Day", hint: "enum EnumName" },
+                { q: "Can enums have methods?", type: "multiple", options: ["Yes", "No", "Only static", "Only private"], correct: 0, hint: "Can have fields, methods, constructors" },
+                { q: "Can enums have constructors?", type: "multiple", options: ["Yes (private)", "No", "Only public", "Only default"], correct: 0, hint: "Private constructors" },
+                { q: "How do you access enum constant DAY in enum Days?", type: "text", correct: "Days.DAY", hint: "EnumName.CONSTANT" }
+            ],
+            49: [
+                { q: "Which exception is thrown for invalid input?", type: "multiple", options: ["InputMismatchException", "IOException", "ParseException", "InvalidInputException"], correct: 0, hint: "When Scanner gets wrong type" },
+                { q: "How do you check if Scanner has next input?", type: "text", correct: "hasNext()", hint: "hasNext() method" },
+                { q: "What method reads a double from Scanner?", type: "text", correct: "nextDouble()", hint: "nextDouble()" },
+                { q: "Should you close Scanner after use?", type: "multiple", options: ["Yes", "No", "Optional", "Only for files"], correct: 0, hint: "Good practice to close resources" },
+                { q: "What method closes a Scanner?", type: "text", correct: "close()", hint: "close() method" },
+                { q: "Can Scanner read from files?", type: "multiple", options: ["Yes", "No", "Only text files", "Only with BufferedReader"], correct: 0, hint: "Can read from File objects" }
+            ],
+            50: [
+                { q: "Which class represents date and time in Java 8+?", type: "multiple", options: ["LocalDateTime", "DateTime", "Date", "Time"], correct: 0, hint: "java.time package" },
+                { q: "How do you get current date and time?", type: "text", correct: "LocalDateTime.now()", hint: "LocalDateTime.now()" },
+                { q: "What class represents only date?", type: "text", correct: "LocalDate", hint: "LocalDate class" },
+                { q: "What class represents only time?", type: "text", correct: "LocalTime", hint: "LocalTime class" },
+                { q: "Is Date class from java.util deprecated?", type: "multiple", options: ["Partially", "No", "Completely", "Not deprecated"], correct: 0, hint: "Use java.time instead" },
+                { q: "What package contains modern date-time API?", type: "text", correct: "java.time", hint: "java.time package" }
+            ],
+            51: [
+                { q: "What is ArrayList?", type: "multiple", options: ["Resizable array", "Fixed size array", "Linked list", "Hash table"], correct: 0, hint: "Dynamic array" },
+                { q: "Write code to create an ArrayList of Strings:", type: "text", correct: "ArrayList<String> list = new ArrayList<>()", hint: "ArrayList<Type> name = new ArrayList<>();" },
+                { q: "What method adds an element to ArrayList?", type: "text", correct: "add", hint: "add() method" },
+                { q: "How do you get element at index 2?", type: "text", correct: "list.get(2)", hint: "get(index)" },
+                { q: "What method removes element at index?", type: "text", correct: "remove", hint: "remove(index)" },
+                { q: "Does ArrayList maintain insertion order?", type: "multiple", options: ["Yes", "No", "Sometimes", "Random order"], correct: 0, hint: "Order is preserved" }
+            ],
+            52: [
+                { q: "What is the difference between ArrayList and LinkedList?", type: "multiple", options: ["ArrayList uses array, LinkedList uses nodes", "No difference", "LinkedList is faster always", "ArrayList is deprecated"], correct: 0, hint: "Different internal structures" },
+                { q: "Which is faster for random access?", type: "multiple", options: ["ArrayList", "LinkedList", "Same", "Depends"], correct: 0, hint: "Array access is O(1)" },
+                { q: "Which is better for frequent insertions/deletions?", type: "multiple", options: ["LinkedList", "ArrayList", "Same", "Neither"], correct: 0, hint: "No shifting required" },
+                { q: "Write code to create a LinkedList of integers:", type: "text", correct: "LinkedList<Integer> list = new LinkedList<>()", hint: "LinkedList<Type> name = new LinkedList<>();" },
+                { q: "Can LinkedList be used as a Queue?", type: "multiple", options: ["Yes", "No", "Only as Stack", "Not recommended"], correct: 0, hint: "Implements Queue interface" },
+                { q: "What method adds element at the beginning of LinkedList?", type: "text", correct: "addFirst", hint: "addFirst() method" }
+            ],
+            53: [
+                { q: "What is HashMap?", type: "multiple", options: ["Key-value pair collection", "Ordered list", "Array of values", "Tree structure"], correct: 0, hint: "Map interface implementation" },
+                { q: "Write code to create a HashMap with String keys and Integer values:", type: "text", correct: "HashMap<String, Integer> map = new HashMap<>()", hint: "HashMap<K, V> name = new HashMap<>();" },
+                { q: "What method adds a key-value pair?", type: "text", correct: "put", hint: "put(key, value)" },
+                { q: "How do you get value for a key?", type: "text", correct: "map.get(key)", hint: "get(key)" },
+                { q: "Does HashMap allow duplicate keys?", type: "multiple", options: ["No", "Yes", "Sometimes", "Only null keys"], correct: 0, hint: "Overwrites existing key" },
+                { q: "Can HashMap have null keys?", type: "multiple", options: ["Yes (one null key)", "No", "Multiple null keys", "Only as value"], correct: 0, hint: "One null key allowed" }
+            ],
+            54: [
+                { q: "What is HashSet?", type: "multiple", options: ["Set with unique elements", "Ordered list", "Key-value pairs", "Duplicate allowed"], correct: 0, hint: "No duplicates" },
+                { q: "Write code to create a HashSet of Strings:", type: "text", correct: "HashSet<String> set = new HashSet<>()", hint: "HashSet<Type> name = new HashSet<>();" },
+                { q: "Does HashSet allow duplicates?", type: "multiple", options: ["No", "Yes", "Sometimes", "Only primitives"], correct: 0, hint: "Unique elements only" },
+                { q: "Is HashSet ordered?", type: "multiple", options: ["No", "Yes", "Sometimes", "Sorted"], correct: 0, hint: "No guaranteed order" },
+                { q: "What method adds element to HashSet?", type: "text", correct: "add", hint: "add() method" },
+                { q: "What does add() return if element already exists?", type: "multiple", options: ["false", "true", "null", "Exception"], correct: 0, hint: "Returns false if already present" }
+            ],
+            55: [
+                { q: "What is an Iterator?", type: "multiple", options: ["Interface to traverse collections", "Collection type", "Loop type", "Data structure"], correct: 0, hint: "For iteration" },
+                { q: "Write code to get iterator from a list:", type: "text", correct: "list.iterator()", hint: "collection.iterator()" },
+                { q: "What method checks if more elements exist?", type: "text", correct: "hasNext()", hint: "hasNext() method" },
+                { q: "What method gets the next element?", type: "text", correct: "next()", hint: "next() method" },
+                { q: "Can you remove elements while iterating with Iterator?", type: "multiple", options: ["Yes (with remove())", "No", "Only ArrayList", "Causes exception"], correct: 0, hint: "Use iterator.remove()" },
+                { q: "What happens if you call next() when hasNext() is false?", type: "multiple", options: ["NoSuchElementException", "Returns null", "Returns last element", "Nothing"], correct: 0, hint: "Exception thrown" }
+            ],
+            56: [
+                { q: "What are wrapper classes?", type: "multiple", options: ["Object versions of primitives", "String wrappers", "Collection wrappers", "Exception handlers"], correct: 0, hint: "Convert primitives to objects" },
+                { q: "What is the wrapper class for int?", type: "text", correct: "Integer", hint: "Integer class" },
+                { q: "What is autoboxing?", type: "multiple", options: ["Automatic primitive to wrapper conversion", "Manual conversion", "String parsing", "Type casting"], correct: 0, hint: "Automatic conversion" },
+                { q: "What is unboxing?", type: "multiple", options: ["Automatic wrapper to primitive conversion", "Manual conversion", "Object creation", "Type casting"], correct: 0, hint: "Reverse of autoboxing" },
+                { q: "Write code for autoboxing int 5 to Integer:", type: "text", correct: "Integer num = 5", hint: "Integer obj = primitiveValue;" },
+                { q: "What method converts String to int?", type: "text", correct: "Integer.parseInt", hint: "Integer.parseInt()" }
+            ],
+            57: [
+                { q: "What is an exception?", type: "multiple", options: ["Runtime error or problem", "Compile error", "Syntax error", "Warning"], correct: 0, hint: "Abnormal condition" },
+                { q: "What are the two main types of exceptions?", type: "multiple", options: ["Checked and Unchecked", "Runtime and Compile", "Error and Warning", "Fatal and Non-fatal"], correct: 0, hint: "Checked vs unchecked" },
+                { q: "What is a checked exception?", type: "multiple", options: ["Must be handled at compile time", "Optional to handle", "Runtime only", "Cannot be caught"], correct: 0, hint: "Compiler enforces handling" },
+                { q: "What is an unchecked exception?", type: "multiple", options: ["Runtime exceptions", "Compile time exceptions", "Syntax errors", "Warnings"], correct: 0, hint: "Like NullPointerException" },
+                { q: "What is the parent class of all exceptions?", type: "text", correct: "Throwable", hint: "Throwable class" },
+                { q: "Which keyword is used to manually throw an exception?", type: "text", correct: "throw", hint: "throw keyword" }
+            ],
+            58: [
+                { q: "Write the keyword to start exception handling:", type: "text", correct: "try", hint: "try block" },
+                { q: "What keyword follows try to handle exceptions?", type: "text", correct: "catch", hint: "catch block" },
+                { q: "Write basic try-catch structure:", type: "text", correct: "try { } catch (Exception e) { }", hint: "try { } catch (Type e) { }" },
+                { q: "What block executes regardless of exception?", type: "text", correct: "finally", hint: "finally block" },
+                { q: "Can you have try without catch?", type: "multiple", options: ["Yes (with finally)", "No", "Never", "Only in methods"], correct: 0, hint: "Must have catch or finally" },
+                { q: "Can you have multiple catch blocks?", type: "multiple", options: ["Yes", "No", "Maximum 2", "Only for different exceptions"], correct: 0, hint: "Multiple catch blocks allowed" }
+            ],
+            59: [
+                { q: "What class is used for regular expressions in Java?", type: "text", correct: "Pattern", hint: "Pattern class" },
+                { q: "What package contains regex classes?", type: "text", correct: "java.util.regex", hint: "java.util.regex package" },
+                { q: "What does . match in regex?", type: "multiple", options: ["Any single character", "Dot literal", "Whitespace", "Digit"], correct: 0, hint: "Wildcard" },
+                { q: "What does + mean in regex?", type: "multiple", options: ["One or more occurrences", "Optional", "Exactly one", "Zero or more"], correct: 0, hint: "One or more" },
+                { q: "What does * mean in regex?", type: "multiple", options: ["Zero or more occurrences", "One or more", "Exactly one", "Optional"], correct: 0, hint: "Zero or more" },
+                { q: "What method checks if entire string matches pattern?", type: "text", correct: "matches", hint: "matches() method" }
+            ],
+            60: [
+                { q: "What is a thread?", type: "multiple", options: ["Lightweight process", "Class type", "Data structure", "Exception type"], correct: 0, hint: "Concurrent execution unit" },
+                { q: "Which class is used to create threads?", type: "text", correct: "Thread", hint: "Thread class" },
+                { q: "What interface can be implemented to create a thread?", type: "text", correct: "Runnable", hint: "Runnable interface" },
+                { q: "What method starts a thread?", type: "text", correct: "start()", hint: "start() method" },
+                { q: "What method contains the thread code?", type: "text", correct: "run()", hint: "run() method" },
+                { q: "Should you call run() directly?", type: "multiple", options: ["No (use start())", "Yes", "Doesn't matter", "Only for Runnable"], correct: 0, hint: "start() calls run()" }
+            ],
+            61: [
+                { q: "What symbol is used for lambda expressions?", type: "text", correct: "->", hint: "Arrow operator" },
+                { q: "What type of interface can be used with lambda?", type: "multiple", options: ["Functional interface", "Any interface", "Abstract class", "Marker interface"], correct: 0, hint: "Single abstract method" },
+                { q: "Write a lambda expression that takes x and returns x * 2:", type: "text", correct: "x -> x * 2", hint: "param -> expression" },
+                { q: "Can lambda expressions access local variables?", type: "multiple", options: ["Yes (if final or effectively final)", "No", "Yes always", "Only instance variables"], correct: 0, hint: "Must be effectively final" },
+                { q: "Are lambda expressions more concise than anonymous classes?", type: "multiple", options: ["Yes", "No", "Same", "Depends"], correct: 0, hint: "Less boilerplate code" },
+                { q: "What Java version introduced lambda expressions?", type: "multiple", options: ["Java 8", "Java 7", "Java 9", "Java 11"], correct: 0, hint: "Java 8" }
+            ]
+        };
+
+        // Achievements (icon, id, condition only - names come from translations)
+        const achievements = [
+            { id: 'first_lesson', icon: 'fa-bullseye', condition: () => state.completedLessons.size >= 1 },
+            { id: 'lesson_5', icon: 'fa-fire', condition: () => state.completedLessons.size >= 5 },
+            { id: 'lesson_10', icon: 'fa-star', condition: () => state.completedLessons.size >= 10 },
+            { id: 'lesson_20', icon: 'fa-gem', condition: () => state.completedLessons.size >= 20 },
+            { id: 'lesson_30', icon: 'fa-crown', condition: () => state.completedLessons.size >= 30 },
+            { id: 'lesson_40', icon: 'fa-trophy', condition: () => state.completedLessons.size >= 40 },
+            { id: 'lesson_50', icon: 'fa-award', condition: () => state.completedLessons.size >= 50 },
+            { id: 'xp_100', icon: 'fa-certificate', condition: () => state.currentXP >= 100 },
+            { id: 'xp_250', icon: 'fa-star-half-stroke', condition: () => state.currentXP >= 250 },
+            { id: 'xp_500', icon: 'fa-sparkles', condition: () => state.currentXP >= 500 },
+            { id: 'xp_1000', icon: 'fa-meteor', condition: () => state.currentXP >= 1000 },
+            { id: 'xp_1500', icon: 'fa-rocket', condition: () => state.currentXP >= 1500 },
+            { id: 'xp_2000', icon: 'fa-burst', condition: () => state.currentXP >= 2000 },
+            { id: 'perfect_1', icon: 'fa-hundred-points', condition: () => false },
+            { id: 'streak_3', icon: 'fa-calendar-check', condition: () => state.currentStreak >= 3 },
+            { id: 'streak_7', icon: 'fa-calendar-week', condition: () => state.currentStreak >= 7 },
+            { id: 'streak_14', icon: 'fa-bolt', condition: () => state.currentStreak >= 14 },
+            { id: 'streak_30', icon: 'fa-calendar', condition: () => state.currentStreak >= 30 },
+            { id: 'speed_demon', icon: 'fa-gauge-high', condition: () => false }
+        ];
+
+        // Current lesson state
+        let currentLesson = null;
+        let currentQuestions = [];
+        let currentQuestionIndex = 0;
+        let lessonStartTime = 0;
+        let correctCount = 0;
+
+        // Initialize app
+        function init() {
+            renderUnits();
+            updateProfile();
+            updateStats();
+            renderAchievements();
+        }
+
+        // Render units and lessons
+        function renderUnits() {
+            const container = document.getElementById('unitsContainer');
+            container.innerHTML = '';
+
+            units.forEach((unit, unitIndex) => {
+                const unitEl = document.createElement('div');
+                unitEl.className = 'unit';
+                unitEl.style.background = `var(${unit.color})`;
+
+                const completedInUnit = unit.lessons.filter(l => state.completedLessons.has(l.id)).length;
+                const progressPercent = (completedInUnit / unit.lessons.length * 100).toFixed(0);
+
+                const unitData = translations[currentLang].units[unitIndex];
+
+                unitEl.innerHTML = `
+                    <div class="unit-header">
+                        <h2 class="unit-title">${unitData.title}</h2>
+                        <p class="unit-description">${unitData.desc}</p>
+                        <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-top: var(--space-8);">${t('progress')}: ${completedInUnit}/${unit.lessons.length} ${t('lessons')} (${progressPercent}%)</p>
+                    </div>
+                    <div class="lessons-grid" id="unit-${unit.id}"></div>
+                `;
+
+                container.appendChild(unitEl);
+
+                const lessonsGrid = document.getElementById(`unit-${unit.id}`);
+                unit.lessons.forEach((lesson, index) => {
+                    const isLocked = index > 0 && !state.completedLessons.has(unit.lessons[index - 1].id) && unit.id > 1;
+                    const isCompleted = state.completedLessons.has(lesson.id);
+
+                    const lessonTitle = translations[currentLang].lessonTitles[lesson.id - 1];
+
+                    const lessonCard = document.createElement('div');
+                    lessonCard.className = `lesson-card ${isCompleted ? 'completed' : ''} ${isLocked ? 'locked' : ''}`;
+                    lessonCard.innerHTML = `
+                        <div class="lesson-number">${t('lesson')} ${lesson.id}</div>
+                        <div class="lesson-title">${lessonTitle}</div>
+                        <div class="lesson-status">
+                            <span>${isCompleted ? `<i class="fas fa-check"></i> ${t('completed')}` : isLocked ? `<i class="fas fa-lock"></i> ${t('locked')}` : `<i class="fas fa-star"></i> ${lesson.xp} XP`}</span>
+                        </div>
+                    `;
+
+                    if (!isLocked) {
+                        lessonCard.onclick = () => startLesson(lesson);
+                    }
+
+                    lessonsGrid.appendChild(lessonCard);
+                });
+            });
+        }
+
+        // Start a lesson
+        function startLesson(lesson) {
+            currentLesson = lesson;
+            lessonStartTime = Date.now();
+            correctCount = 0;
+
+            // Get questions for this lesson and shuffle them
+            const lessonQuestions = questionsDB[lesson.id] || [];
+            currentQuestions = shuffleArray([...lessonQuestions]);
+            currentQuestionIndex = 0;
+
+            const lessonTitle = translations[currentLang].lessonTitles[lesson.id - 1];
+            openModal(lessonTitle);
+            showQuestion();
+        }
+
+        // Shuffle array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Show current question
+        function showQuestion() {
+            const question = currentQuestions[currentQuestionIndex];
+            const modalBody = document.getElementById('modalBody');
+
+            // Get question text and options in current language
+            const questionText = typeof question.q === 'object' ? question.q[currentLang] : question.q;
+            const questionHint = typeof question.hint === 'object' ? question.hint[currentLang] : question.hint;
+
+            // Add translations for submit button
+            const submitText = translations[currentLang].submit || (currentLang === 'ru' ? 'Проверить' : 'Check');
+
+            let optionsHTML = '';
+            if (question.type === 'multiple') {
+                const options = typeof question.options[0] === 'object' ? 
+                    question.options.map(opt => opt[currentLang]) : question.options;
+                optionsHTML = options.map((option, index) => 
+                    `<button class="option-btn" onclick="selectOption(${index})">${option}</button>`
+                ).join('');
+            } else {
+                optionsHTML = `
+                    <textarea class="answer-input" id="answerInput" placeholder="${t('enterAnswer')}" oninput="enableSubmitButton()" rows="3"></textarea>
+                `;
+            }
+
+            modalBody.innerHTML = `
+                <div class="question-container">
+                    <div class="question-header">
+                        <span class="question-number">${t('question')} ${currentQuestionIndex + 1} ${t('of')} ${currentQuestions.length}</span>
+                    </div>
+                    <div class="question-text">${questionText}</div>
+                    <div class="options-container">${optionsHTML}</div>
+                    <div class="feedback" id="feedback"></div>
+                    <div class="hint-section" id="hintSection">
+                        <button class="hint-btn" onclick="showHint()"><i class="fas fa-lightbulb"></i> ${t('showHint')}</button>
+                        <div class="hint-content" id="hintContent">${questionHint || t('showHint')}</div>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary" onclick="closeModal()">${t('exit')}</button>
+                        <button class="btn btn-primary" id="submitBtn" onclick="handleSubmit()" disabled>${submitText}</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Check answer
+        function checkAnswer(selectedIndex = null) {
+            const question = currentQuestions[currentQuestionIndex];
+            const feedback = document.getElementById('feedback');
+            const submitBtn = document.getElementById('submitBtn');
+            let isCorrect = false;
+            let userAnswer = '';
+
+            if (question.type === 'multiple') {
+                const options = document.querySelectorAll('.option-btn');
+                options.forEach(btn => btn.disabled = true);
+
+                isCorrect = selectedIndex === question.correct;
+                options[selectedIndex].classList.add(isCorrect ? 'correct' : 'incorrect');
+                if (!isCorrect) {
+                    options[question.correct].classList.add('correct');
+                }
+            } else if (question.type === 'code' || question.type === 'text') {
+                const input = document.getElementById('answerInput');
+                userAnswer = input.value.trim();
+                
+                // Get correct answer based on language
+                let correctAnswer = '';
+                if (typeof question.correct === 'object') {
+                    correctAnswer = question.correct[currentLang] || question.correct.en || '';
+                } else {
+                    correctAnswer = question.correct;
+                }
+                
+                // Normalize for comparison - flexible spacing but preserve case sensitivity for code
+                const normalizedUser = userAnswer.replace(/\s+/g, ' ').trim();
+                const normalizedCorrect = correctAnswer.replace(/\s+/g, ' ').trim();
+                
+                // Check both case-sensitive and case-insensitive
+                const exactMatch = normalizedUser === normalizedCorrect;
+                const caseInsensitiveMatch = normalizedUser.toLowerCase() === normalizedCorrect.toLowerCase();
+                const containsMatch = normalizedUser.toLowerCase().includes(normalizedCorrect.toLowerCase()) || 
+                                     normalizedCorrect.toLowerCase().includes(normalizedUser.toLowerCase());
+                
+                isCorrect = exactMatch || caseInsensitiveMatch || containsMatch;
+
+                input.disabled = true;
+                input.classList.add(isCorrect ? 'correct' : 'incorrect');
+            }
+
+            // Show feedback
+            if (isCorrect) {
+                feedback.className = 'feedback correct show';
+                feedback.innerHTML = `<i class="fas fa-check-circle"></i> ${t('correct')}`;
+                correctCount++;
+            } else {
+                const correctAnswer = typeof question.correct === 'object' ? question.correct[currentLang] : question.correct;
+                feedback.className = 'feedback incorrect show';
+                feedback.innerHTML = `<i class="fas fa-times-circle"></i> ${t('incorrect')} ${(question.type === 'text' || question.type === 'code') ? '<br>' + t('correctAnswer') + ' <code>' + correctAnswer + '</code>' : ''}`;
+                document.getElementById('hintSection').classList.add('show');
+            }
+
+            state.totalQuestionsAnswered++;
+            if (isCorrect) state.correctAnswers++;
+
+            // CRITICAL: Always enable continue button after checking answer
+            submitBtn.textContent = t('continue');
+            submitBtn.disabled = false;
+            submitBtn.onclick = nextQuestion;
+        }
+
+        // Show hint
+        function showHint() {
+            document.getElementById('hintContent').classList.add('show');
+        }
+
+        // Enable submit button when user types or selects
+        let selectedOptionIndex = null;
+
+        function enableSubmitButton() {
+            const submitBtn = document.getElementById('submitBtn');
+            const input = document.getElementById('answerInput');
+            if (submitBtn && input && input.value.trim().length > 0) {
+                submitBtn.disabled = false;
+            }
+        }
+
+        function selectOption(index) {
+            const question = currentQuestions[currentQuestionIndex];
+            const options = document.querySelectorAll('.option-btn');
+            
+            // Remove previous selection
+            options.forEach(btn => btn.style.background = '');
+            
+            // Highlight selected option
+            options[index].style.background = 'rgba(var(--color-teal-500-rgb), 0.15)';
+            
+            selectedOptionIndex = index;
+            
+            // Enable submit button
+            const submitBtn = document.getElementById('submitBtn');
+            if (submitBtn) {
+                submitBtn.disabled = false;
+            }
+        }
+
+        function handleSubmit() {
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = submitBtn.textContent.trim();
+            const submitText = translations[currentLang].submit || (currentLang === 'ru' ? 'Проверить' : 'Check');
+            
+            // If button says "Check"/"Проверить", check the answer
+            if (btnText === submitText) {
+                const question = currentQuestions[currentQuestionIndex];
+                if (question.type === 'multiple' && selectedOptionIndex !== null) {
+                    checkAnswer(selectedOptionIndex);
+                } else if (question.type === 'text' || question.type === 'code') {
+                    checkAnswer();
+                }
+            } 
+            // If button says "Continue"/"Продолжить", go to next question
+            else {
+                nextQuestion();
+            }
+        }
+
+        // Next question
+        function nextQuestion() {
+            selectedOptionIndex = null; // Reset selection
+            currentQuestionIndex++;
+            if (currentQuestionIndex < currentQuestions.length) {
+                showQuestion();
+            } else {
+                finishLesson();
+            }
+        }
+
+        // Finish lesson
+        function finishLesson() {
+            const score = Math.round((correctCount / currentQuestions.length) * 100);
+            const xpEarned = Math.round((score / 100) * currentLesson.xp);
+            const timeTaken = Math.floor((Date.now() - lessonStartTime) / 1000);
+            const wasPerfect = score === 100;
+            const wasSpeed = timeTaken < 120;
+
+            // Update state
+            const wasNewCompletion = !state.completedLessons.has(currentLesson.id);
+            state.completedLessons.add(currentLesson.id);
+            state.lessonScores[currentLesson.id] = score;
+            addXP(xpEarned);
+            updateStreak();
+
+            // Show results
+            const modalBody = document.getElementById('modalBody');
+            const resultMessage = score === 100 ? `${t('perfect')} <i class="fas fa-trophy"></i>` : 
+                                 score >= 70 ? `${t('greatJob')} <i class="fas fa-thumbs-up"></i>` : 
+                                 `${t('keepPracticing')} <i class="fas fa-dumbbell"></i>`;
+            
+            modalBody.innerHTML = `
+                <div class="results-container">
+                    <div class="results-score">${score}%</div>
+                    <div class="results-message">${resultMessage}</div>
+                    <p class="results-xp"><i class="fas fa-star"></i> +${xpEarned} ${t('xpEarned')}</p>
+                    <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm);"><i class="fas fa-clock"></i> ${t('time')}: ${timeTaken}s | <i class="fas fa-check"></i> ${t('correctAnswers')}: ${correctCount}/${currentQuestions.length}</p>
+                    <div class="results-actions">
+                        <button class="btn btn-secondary" onclick="retryLesson()"><i class="fas fa-redo"></i> ${t('retryLesson')}</button>
+                        <button class="btn btn-primary" onclick="closeModal(); renderUnits();"><i class="fas fa-arrow-right"></i> ${t('continue')}</button>
+                    </div>
+                </div>
+            `;
+
+            // Check achievements
+            if (wasNewCompletion) checkAchievements();
+            if (wasPerfect) unlockAchievement('perfect_1');
+            if (wasSpeed) unlockAchievement('speed_demon');
+
+            updateStats();
+        }
+
+        // Retry lesson
+        function retryLesson() {
+            startLesson(currentLesson);
+        }
+
+        // Add XP
+        function addXP(amount) {
+            const oldLevel = state.level;
+            state.currentXP += amount;
+            state.level = Math.floor(state.currentXP / 100) + 1;
+
+            if (state.level > oldLevel) {
+                showLevelUp(state.level);
+            }
+
+            updateProfile();
+        }
+
+        // Update streak
+        function updateStreak() {
+            const today = new Date().toDateString();
+            const lastDate = state.lastCompletedDate;
+
+            if (lastDate !== today) {
+                if (lastDate) {
+                    const yesterday = new Date();
+                    yesterday.setDate(yesterday.getDate() - 1);
+                    if (lastDate === yesterday.toDateString()) {
+                        state.currentStreak++;
+                    } else {
+                        state.currentStreak = 1;
+                    }
+                } else {
+                    state.currentStreak = 1;
+                }
+                state.lastCompletedDate = today;
+                state.streakDates.push(today);
+            }
+        }
+
+        // Update profile display
+        function updateProfile() {
+            const xpForCurrentLevel = (state.level - 1) * 100;
+            const xpForNextLevel = state.level * 100;
+            const xpInLevel = state.currentXP - xpForCurrentLevel;
+            const xpNeeded = xpForNextLevel - xpForCurrentLevel;
+            const progress = (xpInLevel / xpNeeded) * 100;
+
+            document.getElementById('userLevel').textContent = `${t('level')} ${state.level}`;
+            document.getElementById('xpBar').style.width = `${progress}%`;
+            document.getElementById('xpText').textContent = `${xpInLevel} / ${xpNeeded} XP`;
+        }
+
+        // Update statistics
+        function updateStats() {
+            document.getElementById('totalXP').textContent = state.currentXP;
+            document.getElementById('lessonsCompleted').textContent = state.completedLessons.size;
+            
+            const accuracy = state.totalQuestionsAnswered > 0 
+                ? Math.round((state.correctAnswers / state.totalQuestionsAnswered) * 100) 
+                : 0;
+            document.getElementById('accuracy').textContent = `${accuracy}%`;
+            document.getElementById('questionsAnswered').textContent = state.totalQuestionsAnswered;
+            document.getElementById('currentStreak').textContent = `${state.currentStreak} ${t('days')}`;
+
+            // Calculate favorite topic
+            const unitProgress = {};
+            units.forEach(unit => {
+                const completed = unit.lessons.filter(l => state.completedLessons.has(l.id)).length;
+                if (completed > 0) {
+                    unitProgress[unit.title] = completed;
+                }
+            });
+
+            let favTopic = '-';
+            let maxCompleted = 0;
+            for (const [topic, count] of Object.entries(unitProgress)) {
+                if (count > maxCompleted) {
+                    maxCompleted = count;
+                    favTopic = topic;
+                }
+            }
+            document.getElementById('favoriteTopic').textContent = favTopic;
+        }
+
+        // Render achievements
+        function renderAchievements() {
+            const grid = document.getElementById('achievementGrid');
+            grid.innerHTML = '';
+
+            achievements.forEach((achievement, index) => {
+                const badge = document.createElement('div');
+                const isUnlocked = state.achievements.has(achievement.id);
+                const achData = translations[currentLang].achievements[index];
+                badge.className = `achievement-badge ${isUnlocked ? 'unlocked' : 'locked'}`;
+                badge.innerHTML = `
+                    <i class="fas ${achievement.icon}"></i>
+                    <div class="tooltip" style="bottom: 100%; left: 50%; transform: translateX(-50%); margin-bottom: 8px;">
+                        ${achData.name}<br><span style="font-size: 10px;">${achData.desc}</span>
+                    </div>
+                `;
+                badge.title = `${achData.name}: ${achData.desc}`;
+                grid.appendChild(badge);
+            });
+        }
+
+        // Check achievements
+        function checkAchievements() {
+            achievements.forEach(achievement => {
+                if (!state.achievements.has(achievement.id) && achievement.condition()) {
+                    unlockAchievement(achievement.id);
+                }
+            });
+        }
+
+        // Unlock achievement
+        function unlockAchievement(achievementId) {
+            if (state.achievements.has(achievementId)) return;
+
+            state.achievements.add(achievementId);
+            const achievement = achievements.find(a => a.id === achievementId);
+            if (achievement) {
+                showAchievementPopup(achievement);
+                renderAchievements();
+            }
+        }
+
+        // Show achievement popup
+        function showAchievementPopup(achievement) {
+            const achIndex = achievements.findIndex(a => a.id === achievement.id);
+            const achData = translations[currentLang].achievements[achIndex];
+            const popup = document.getElementById('achievementPopup');
+            document.getElementById('achievementPopupIcon').innerHTML = `<i class="fas ${achievement.icon}"></i>`;
+            document.getElementById('achievementPopupTitle').textContent = achData.name;
+            document.getElementById('achievementPopupDesc').textContent = achData.desc;
+            document.getElementById('btnAchievementClose').textContent = t('awesome');
+
+            popup.classList.add('show');
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 3000);
+        }
+
+        // Close achievement popup
+        function closeAchievementPopup() {
+            document.getElementById('achievementPopup').classList.remove('show');
+        }
+
+        // Show level up
+        function showLevelUp(level) {
+            const popup = document.getElementById('levelUpPopup');
+            document.getElementById('levelUpTitle').textContent = t('levelUp');
+            document.getElementById('levelUpText').textContent = t('nowYouAre');
+            document.getElementById('newLevel').textContent = `${t('level')} ${level}!`;
+            document.getElementById('btnLevelUpClose').textContent = t('continue');
+            popup.classList.add('show');
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 3000);
+        }
+
+        // Close level up popup
+        function closeLevelUpPopup() {
+            document.getElementById('levelUpPopup').classList.remove('show');
+        }
+
+        // Modal controls
+        function openModal(title) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('lessonModal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('lessonModal').classList.remove('active');
+            currentLesson = null;
+        }
+
+        document.getElementById('closeModal').onclick = closeModal;
+
+        // Initialize on load
+        init();
+        setLanguage(currentLang);
+    </script>
+</body>
+</html>
