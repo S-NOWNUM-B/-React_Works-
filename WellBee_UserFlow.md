@@ -3,19 +3,36 @@
 ## Описание проекта
 WellBee — мобильное приложение для здоровья и благополучия, локализованное для СНГ рынка.
 
-### Целевая аудитория:
-- **Студенты и молодёжь (18-25)** - забота о стрессе, продуктивность
-- **Молодые специалисты (25-35)** - баланс работы/жизни, сон
-- **Родители (30-45)** - семейное здоровье, профилактика
+### 🎯 Бизнес-идея:
+**Ниша:** Digital wellbeing (здоровье и забота о себе своей психологии)
 
-### Ключевые особенности:
-- ✅ Персональный AI-ассистент с анализом паттернов
-- ✅ Трекеры сна и питания с автоматическим вводом
-- ✅ Геймификация (баллы, уровни, челленджи)
-- ✅ Freemium модель ($2-5/месяц)
-- ✅ Интеграция с фитнес-браслетами
-- ✅ Социальные функции (друзья, соревнования)
-- ✅ Локализация (RU, KZ, EN)
+**Проблема:** В СНГ есть высокий спрос на недорогие и доступные решения для wellness-сервисов. Люди тратят на психологические и wellness-сервисы меньше, чем в Европе и США — нужен бюджетный продукт.
+
+### 👥 Целевая аудитория (сегментация):
+- **Студенты и молодёжь (18-25)** — забота о сне, стресс, продуктивность
+- **Молодые специалисты (25-35)** — баланс работы/жизни, отдых, здоровое питание
+- **Родители (30-45)** — профилактика стресса, сон и здоровье семьи
+
+### ⚡ Ключевые функции:
+- ✅ **Трекеры сна и питания** — автоматический и ручной ввод данных
+- ✅ **Персональный AI-ассистент** — анализирует данные и даёт советы
+- ✅ **Геймификация** — «очки здоровья», челленджи и достижения
+- ✅ **Дыхательные практики и медитации** — мини-упражнения, техники дыхания
+- ✅ **Психологическая поддержка** — AI-рекомендации
+- ✅ **Интеграция с фитнес-браслетами** — синхронизация данных
+
+### 💎 Бизнес-модель (Freemium):
+- **Базовые функции бесплатно:** трекеры сна и питания, базовые советы AI
+- **Premium подписка $3-5/мес:**
+  - Возможность интеграции с фитнес-браслетами
+  - Низкая цена подписки ($3-5)
+  - Дать комплексный инструмент (сон + питание + психология) в одном
+  - Локализовать под культурные реалии, тарифы
+
+### 🌍 Особенности для СНГ:
+- ✅ Локализация (русский, казахский, английский)
+- ✅ Доступная цена ($3-5/мес вместо $10-15 в западных аналогах)
+- ✅ Адаптация под культурные особенности СНГ
 
 ---
 
@@ -90,16 +107,22 @@ graph TB
     CheckValid -->|Ошибка| LoginError[Неверные данные]
     LoginError --> Login
     CheckValid -->|OK| Dashboard
-    CreateAcc --> ProfileSetup[Настройка профиля]
+    CreateAcc --> ProfileSetup[Настройка профиля:<br/>Пол, возраст]
     ProfileSetup --> GoalsSetup[Выбор целей]
-    GoalsSetup --> NotifPerm{Разрешить уведомления?}
+    GoalsSetup --> Goal1[Улучшить сон]
+    GoalsSetup --> Goal2[Здоровое питание]
+    GoalsSetup --> Goal3[Снизить стресс]
+    Goal1 --> NotifPerm
+    Goal2 --> NotifPerm
+    Goal3 --> NotifPerm
+    NotifPerm{Разрешить уведомления?}
     NotifPerm -->|Да| NotifOn[Уведомления включены]
     NotifPerm -->|Нет| NotifOff[Отключены]
     NotifOn --> Dashboard
     NotifOff --> Dashboard
     
     %% Dashboard
-    Dashboard([ГЛАВНЫЙ ЭКРАН]) --> HeaderDash[Header: Профиль, Баллы]
+    Dashboard([ГЛАВНЫЙ ЭКРАН]) --> HeaderDash[Header: Профиль, Очки здоровья, Серия]
     Dashboard --> CardsSect[Карточки]
     Dashboard --> BottomNav[Навигация]
     HeaderDash -->|Клик| ProfilePage
@@ -108,7 +131,7 @@ graph TB
     CardsSect --> AICard[🤖 AI советы]
     CardsSect --> ChallengeCard[🏆 Челленджи]
     CardsSect --> PracticeCard[🧘 Практики]
-    BottomNav --> NavStats[Статистика]
+    BottomNav --> NavStats[Мой результат]
     BottomNav --> NavAI[AI]
     BottomNav --> NavProfile[Профиль]
     NavStats --> StatsScreen
@@ -126,7 +149,7 @@ graph TB
     Tracking --> DetectPhases[Определение фаз]
     DetectPhases --> WakeUp[Пробуждение]
     WakeUp --> SleepResults[Результаты]
-    SleepResults --> SleepPoints[+50 баллов]
+    SleepResults --> SleepPoints[+50 очков здоровья]
     SleepResults --> AIAnalysisSleep[AI анализ]
     ManualSleep --> ManualForm[Форма ввода]
     ManualForm --> SaveSleep[Сохранить]
@@ -151,11 +174,11 @@ graph TB
     ProductFound -->|Нет| SearchFood
     SelectFood --> SaveMeal[Сохранить]
     SaveMeal --> UpdateNutrition[Обновление КБЖУ]
-    UpdateNutrition --> NutritionPoints[+20 баллов]
+    UpdateNutrition --> NutritionPoints[+20 очков здоровья]
     UpdateNutrition --> AIAdviceNutr[AI советы]
     WaterTrack --> AddWater[Добавить стакан]
     AddWater --> WaterGoal{Цель выполнена?}
-    WaterGoal -->|Да| WaterComplete[+10 баллов]
+    WaterGoal -->|Да| WaterComplete[+10 очков здоровья]
     
     %% AI Помощник
     AICard --> AIScreen[AI Помощник]
@@ -179,7 +202,7 @@ graph TB
     ViewProgress --> CheckComplete{Выполнен?}
     CheckComplete -->|Да| ChallComplete[Завершён!]
     CheckComplete -->|Нет| ContinueChall[Продолжить]
-    ChallComplete --> Rewards[Награды: Баллы, Бейдж]
+    ChallComplete --> Rewards[Награды: Очки здоровья, Бейдж]
     Rewards --> LeaderboardView[Таблица лидеров]
     
     %% Практики
@@ -196,19 +219,19 @@ graph TB
     PracticeActive --> CheckCycles{Завершена?}
     CheckCycles -->|Нет| PracticeActive
     CheckCycles -->|Да| PracticeComplete[Завершена!]
-    PracticeComplete --> PracticePoints[+15 баллов]
+    PracticeComplete --> PracticePoints[+15 очков здоровья]
     MorningMed --> PremiumLock[🔒 Premium]
     PremiumLock --> UpgradePrem[Оформить Premium]
     
     %% Статистика
-    NavStats --> StatsScreen[Статистика]
+    NavStats --> StatsScreen[Мой результат]
     StatsScreen --> PeriodSelect[Выбор периода]
     StatsScreen --> CategoryTabs[Категории]
     PeriodSelect --> Week[Неделя]
     PeriodSelect --> Month[Месяц]
     CategoryTabs --> SleepStatsTab[Сон]
     CategoryTabs --> NutritionStatsTab[Питание]
-    StatsScreen --> AIAnalysisStats[AI анализ прогресса]
+    StatsScreen --> AIAnalysisStats[AI анализ: улучшить результат]
     AIAnalysisStats --> Insights[Инсайты]
     
     %% Premium
@@ -262,6 +285,7 @@ graph TB
     ConnectDevice --> AuthDevice[Авторизация]
     AuthDevice --> SyncData[Синхронизация]
     SyncData --> DeviceConnected[Подключено!]
+    DeviceConnected --> ShareSuccess[Делиться успехами<br/>с друзьями]
     Logout --> LogoutConfirm{Подтвердить?}
     LogoutConfirm -->|Да| LoggedOut[Выход выполнен]
     LogoutConfirm -->|Нет| ProfilePage
@@ -286,8 +310,8 @@ graph TB
     classDef decision fill:#ffe1e1,stroke:#dc3545,stroke-width:2px
     
     class Start,Dashboard,NotifSystem entry
-    class AuthScreen,ProfileSetup,SleepMain,NutritionMain,AIScreen,ChallengeMain,PracticeMain,StatsScreen,PremiumScreen,ProfilePage main
-    class CreateAcc,NotifOn,SleepResults,SaveMeal,ChallComplete,PracticeComplete,PaymentSuccess,PremiumActive,DeviceConnected,SleepPoints,NutritionPoints,WaterComplete,PracticePoints,Rewards success
+    class AuthScreen,ProfileSetup,GoalsSetup,Goal1,Goal2,Goal3,SleepMain,NutritionMain,AIScreen,ChallengeMain,PracticeMain,StatsScreen,PremiumScreen,ProfilePage main
+    class CreateAcc,NotifOn,SleepResults,SaveMeal,ChallComplete,PracticeComplete,PaymentSuccess,PremiumActive,DeviceConnected,ShareSuccess,SleepPoints,NutritionPoints,WaterComplete,PracticePoints,Rewards success
     class PremiumLock,MorningMed,UpgradePrem,Plans premium
     class AICard,AIProcess,AIResponse,AIAnalysisSleep,AIAdviceNutr,AIAnalysisStats,AITriggers,PersonalTip,HealthAlert ai
     class CheckAuth,CheckValid,NotifPerm,SetAlarm,MealType,ProductFound,WaterGoal,CheckComplete,CheckCycles,TrialOffer,PaymentCheck,LogoutConfirm decision
